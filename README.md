@@ -1,1 +1,0 @@
-# qcnotes.github.io
