@@ -29,5 +29,5 @@ $$\rho_{i}' = \frac{M_{i} \rho M_{i}^{+}}{tr(M_{i} \rho M_{i}^{+})}$$
 Let A and B be two quantum systems associated with corresponding Hilbert space $H_A$ and $H_B$. The associated Hilbert space of composite system $A \otimes B$ is $H_A \otimes H_B$.  
 The state of composite system is described as  
 
-$\rho_{AB}: H_A \otimes H_B \to H_A \otimes H_B$ 
+$$\rho_{AB}: H_A \otimes H_B \to H_A \otimes H_B$$ 
 
