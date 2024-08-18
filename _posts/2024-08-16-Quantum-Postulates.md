@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Quantum Postulates"
+categories: misc
+---
+
 ## 1) State postulate:  
 Every quantum system A is associated with Hilbert space $H_A$. The state of quantum system is described by positive linear map   
 
