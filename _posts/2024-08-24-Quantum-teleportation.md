@@ -12,7 +12,6 @@ Let u assume Alice possess an arbitrary quantum state $|\psi\rangle = \alpha|0\r
 
 The quantum teleportation circuit shown below transfers the quantum state $|\psi\rangle$ from Alice to Bob. Let us look into the mathematical details of quantum teleportation algorithm.  
 
-
 ### Composite state at position (1)  
 $$ |A_1 A_2 B\rangle = |\psi\rangle \otimes |\phi^+\rangle $$  
 
