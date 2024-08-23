@@ -27,18 +27,18 @@ $$|A_1 A_2 B\rangle  = \frac{\alpha}{2}|000\rangle + \frac{\alpha}{2}|100\rangle
 $$= \frac{1}{2}|00\rangle (\alpha|0\rangle+\beta|1\rangle) + \frac{1}{2}|01\rangle (\alpha|1\rangle+\beta|0\rangle) + \frac{1}{2}|10\rangle (\alpha|0\rangle-\beta|1\rangle) + \frac{1}{2}|11\rangle (\alpha|1\rangle-\beta|0\rangle)$$  
 
 ### Composite state at position (4)  
-The two qubit measurement outcome of A is  
+The measurement outcome of two qubit of A are  
 
-\begin{table} 
-\begin{tabular}{ |l|l|l| }  
-\hline 
- $|00\rangle$ & $\frac{1}{4}$ & $(\alpha|0\rangle+\beta|1\rangle)$ \\  \hline 
- $|01\rangle$ & $\frac{1}{4}$ & $(\alpha|1\rangle+\beta|0\rangle)$ \\  \hline 
- $|10\rangle$ & $\frac{1}{4}$ & $(\alpha|0\rangle-\beta|1\rangle)$ \\  \hline  
- $|11\rangle$ & $\frac{1}{4}$ & $(\alpha|1\rangle-\beta|0\rangle)$ \\  \hline  
-\end{tabular} 
-\end{table}  
+<div align="center">
+  
+A's measurement  | Measurement Probability  | B's state   
+:--------------  | :----------------------  | :---------------------
+$\|00\rangle$    |     $\frac{1}{4}$        | $(\alpha\|0\rangle+\beta\|1\rangle)$
+$\|01\rangle$    |     $\frac{1}{4}$        | $(\alpha\|1\rangle+\beta\|0\rangle)$
+$\|10\rangle$    |     $\frac{1}{4}$        | $(\alpha\|0\rangle-\beta\|1\rangle)$
+$\|11\rangle$    |     $\frac{1}{4}$        | $(\alpha\|1\rangle-\beta\|0\rangle)$
+</div>
 
 ### Composite state at position (5)  
-
+Alice communicates its measurement outcome to Bob who inturn apply X and Z gate to its qbit to receive the intended state $|\psi\rangle = \alpha|0\rangle+\beta|1\rangle$ from Alice. 
 
