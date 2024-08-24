@@ -7,15 +7,11 @@ categories: misc
 ## Quantum Teleportation:  
 The transfer protocal of an arbitrary quantum state from Alice to Bob is called Quantum teleportation. This protocol requires additional resource in the form of shared entangled Bell state and 2-bit classical communication between them.  
 
-Let u assume Alice possess an arbitrary quantum state $|\psi\rangle = \alpha|0\rangle+\beta|1\rangle$ and wants to transfer it to Bob. Alice & Bob share Bell state $|\phi^+\rangle=(|00\rangle+|11\rangle)/\sqrt{2}$ and now they have been separated apart.  
+Let us assume Alice possess an arbitrary quantum state $|\psi\rangle = \alpha|0\rangle+\beta|1\rangle$ and wants to transfer it to Bob. Alice & Bob share Bell state $|\phi^+\rangle=(|00\rangle+|11\rangle)/\sqrt{2}$ and now they have been separated apart.  
 
 The quantum teleportation circuit shown below transfers the quantum state $|\psi\rangle$ from Alice to Bob. Let us look into the mathematical details of quantum teleportation algorithm.  
 
-<div align="center">  
-
 ![image](/assets/images/quantum_teleportation.jpeg)
-
-</div>
 
 ### Composite state at position (1)  
 $$ |A_1 A_2 B\rangle = |\psi\rangle \otimes |\phi^+\rangle $$  
