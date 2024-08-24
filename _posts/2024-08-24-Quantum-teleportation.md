@@ -15,9 +15,14 @@ The quantum teleportation circuit shown below transfers the quantum state $\|\ps
 ### Composite state at position (1)
 The state at position (1) is tensor product three input qubits $\|\psi\rangle \text{and} \|\phi^+\rangle$  
 
-$$ |A_1 A_2 B\rangle = |\psi\rangle \otimes |\phi^+\rangle \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \quad $$  
-
-$$ = \frac{\alpha}{\sqrt{2}}|000\rangle + \frac{\alpha}{\sqrt{2}}|011\rangle + \frac{\beta}{\sqrt{2}}|100\rangle + \frac{\beta}{\sqrt{2}}|111\rangle$$  
+$$
+\begin{equation}
+\begin{split}
+|A_1 A_2 B\rangle = |\psi\rangle \otimes |\phi^+\rangle \qquad  \qquad \qquad \qquad  \qquad  \qquad \quad\\
+= \frac{\alpha}{\sqrt{2}}|000\rangle + \frac{\alpha}{\sqrt{2}}|011\rangle + \frac{\beta}{\sqrt{2}}|100\rangle + \frac{\beta}{\sqrt{2}}|111\rangle \\
+\end{split}
+\end{equation}
+$$  
 
 ### Composite state at position (2)  
 Alice applies CNOT gate to two of its input qubits and the state at position (2) is given as  
