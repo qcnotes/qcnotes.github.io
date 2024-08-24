@@ -32,13 +32,27 @@ $$|A_1 A_2 B\rangle  = \frac{\alpha}{\sqrt{2}}|000\rangle + \frac{\alpha}{\sqrt{
 ### Composite state at position (3)  
 Alice applies Hadamard gate to its first input qubits and the state at position (3) is given as  
 
-$$|A_1 A_2 B\rangle  = \frac{\alpha}{2}|000\rangle + \frac{\alpha}{2}|100\rangle + \frac{\alpha}{2}|011\rangle + \frac{\alpha}{2}|111\rangle + \frac{\beta}{2}|010\rangle - \frac{\beta}{2}|110\rangle + \frac{\beta}{2}|001\rangle - \frac{\beta}{2}|101\rangle \qquad  \qquad \qquad \qquad  $$  
+$$
+\begin{equation}
+\begin{split}
+|A_1 A_2 B\rangle  = \frac{\alpha}{2}|000\rangle + \frac{\alpha}{2}|100\rangle + \frac{\alpha}{2}|011\rangle + \frac{\alpha}{2}|111\rangle \qquad \\ 
+\+ \frac{\beta}{2}|010\rangle - \frac{\beta}{2}|110\rangle + \frac{\beta}{2}|001\rangle - \frac{\beta}{2}|101\rangle  \\  
+\end{split}
+\end{equation}
+$$  
 
-Collecting identical terms of first two qubits,
+Collecting first two identical qubits terms as,
 
-$$= \frac{1}{2}|00\rangle (\alpha|0\rangle+\beta|1\rangle) + \frac{1}{2}|01\rangle (\alpha|1\rangle+\beta|0\rangle) + \frac{1}{2}|10\rangle (\alpha|0\rangle-\beta|1\rangle) + \frac{1}{2}|11\rangle (\alpha|1\rangle-\beta|0\rangle)$$  
+$$
+\begin{equation}
+\begin{split}
+|A_1 A_2 B\rangle = \frac{1}{2}|00\rangle (\alpha|0\rangle+\beta|1\rangle) + \frac{1}{2}|01\rangle (\alpha|1\rangle+\beta|0\rangle) \qquad \\
+\+ \frac{1}{2}|10\rangle (\alpha|0\rangle-\beta|1\rangle) + \frac{1}{2}|11\rangle (\alpha|1\rangle-\beta|0\rangle) \\
+\end{split}
+\end{equation}
+$$  
 
-The above expression has four terms and first two qubits of Alice are in computation basis form. Alice can perform measurement in computation basis to collapse to one of the terms in the above expression. Though the Bob's qubit has collapsed and he still has knowledge of its state unless Alice communicates its measurement output to Bob. In that case, Bob is certain about it state and he can perform some quantum operation to receive $\|\psi\rangle$.
+The above expression has four terms and first two qubits of Alice are in computation basis form. Alice can perform measurement in computation basis to collapse to one of the terms in the above expression. Though the Bob's qubit has collapsed and he still has knowledge of its state unless Alice communicates its measurement output to Bob. In that case, Bob is certain about its state and he can perform some quantum gate operation to receive the state $\|\psi\rangle$.
 
 ### Composite state at position (4)  
 The measurement outcome of Alice qubit and corresponding Bob's states are  
