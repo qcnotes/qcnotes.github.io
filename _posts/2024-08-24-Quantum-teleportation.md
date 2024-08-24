@@ -29,7 +29,7 @@ $$= \frac{1}{2}|00\rangle (\alpha|0\rangle+\beta|1\rangle) + \frac{1}{2}|01\rang
 ### Composite state at position (4)  
 The measurement outcome of two qubit of A are  
 
-<div align="center">
+
   
 A's measurement  | Measurement Probability  | B's state   
 :--------------  | :----------------------  | :---------------------
@@ -37,7 +37,7 @@ $\|00\rangle$    |     $\frac{1}{4}$        | $(\alpha\|0\rangle+\beta\|1\rangle
 $\|01\rangle$    |     $\frac{1}{4}$        | $(\alpha\|1\rangle+\beta\|0\rangle)$
 $\|10\rangle$    |     $\frac{1}{4}$        | $(\alpha\|0\rangle-\beta\|1\rangle)$
 $\|11\rangle$    |     $\frac{1}{4}$        | $(\alpha\|1\rangle-\beta\|0\rangle)$
-</div>
+
 
 ### Composite state at position (5)  
 Alice communicates its measurement outcome to Bob who inturn apply X and Z gate to its qbit to receive the intended state $|\psi\rangle = \alpha|0\rangle+\beta|1\rangle$ from Alice. 
