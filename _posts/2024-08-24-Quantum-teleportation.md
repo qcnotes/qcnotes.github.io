@@ -68,5 +68,5 @@ $\|11\rangle$    |     $\frac{1}{4}$        | $(\alpha\|1\rangle-\beta\|0\rangle
 
 
 ### Composite state at position (5)  
-Alice communicates its measurement outcome $(m_0,m_1)$ to Bob who inturn apply X and Z gate dependending on $(m_0,m_1)$ to its qubit to recover the intended state $|\psi\rangle = \alpha|0\rangle+\beta|1\rangle$. 
+Alice communicates its measurement outcome $(m_0,m_1)$ to Bob who inturn apply X and Z gate to its qubit to recover the intended state $|\psi\rangle = \alpha|0\rangle+\beta|1\rangle$. 
 
