@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quantum Teleportation"
+title: "2. Quantum Teleportation"
 categories: misc
 ---
 
