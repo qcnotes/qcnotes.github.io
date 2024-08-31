@@ -43,28 +43,28 @@ $$
 \end{equation}
 $$  
 
-where, $\|i\rangle_{A}=\sum_{j} u_{j,i} \|j\rangle_{A}$ and $\|i\rangle_{B}=\sum_{k} v_{k,i}^{*} \|k\rangle_{B}$ are unitary transformation of initial orthonormal basis os A and B.
+where, $\|i\rangle_{A}=\sum_{j} u_{j,i} \|j\rangle_{A}$ and $\|i\rangle_{B}=\sum_{k} v_{k,i}^{*} \|k\rangle_{B}$ are unitary transformation of initial orthonormal basis of A and B.
 
-#### state of system A:
+#### State of system A:
 The state of individual system A can be found by tracing out other system B.
 
 $$
 \begin{equation}
 \begin{split}
-\rho_A = Tr_{B}(\|\psi \rangle_{AB} \langle \psi\|_{AB})   \qquad  \\  
- = \sum_{i=1}^{d} \lambda_{i}^{2} \|i\rangle_{A} \langle i\|_{A} \qquad \\  
+\rho_A = Tr_{B}(|\psi \rangle_{AB} \langle \psi|_{AB})   \qquad  \\  
+ = \sum_{i=1}^{d} \lambda_{i}^{2} |i\rangle_{A} \langle i|_{A} \qquad \qquad \\  
 \end{split}
 \end{equation}
 $$  
 
-#### state of system B:
+#### State of system B:
 The state of individual system B can be found by tracing out other system A.
 
 $$
 \begin{equation}
 \begin{split}
-\rho_B = Tr_{A}(\|\psi \rangle_{AB} \langle \psi\|_{AB})   \qquad  \\  
- = \sum_{i=1}^{d} \lambda_{i}^{2} \|i\rangle_{B} \langle i\|_{B} \qquad \\   
+\rho_B = Tr_{A}(|\psi \rangle_{AB} \langle \psi|_{AB})   \qquad  \\  
+ = \sum_{i=1}^{d} \lambda_{i}^{2} |i\rangle_{B} \langle i|_{B} \qquad \qquad \\   
 \end{split}
 \end{equation}
 $$  
