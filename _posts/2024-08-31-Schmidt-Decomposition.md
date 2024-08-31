@@ -31,7 +31,7 @@ $$
 = U \Lambda V^{+}=\sum_{i=1}^{d} \lambda_{i} u_{i}  v_{i}^{+}
 $$
 
-A particular values of matrix can be expression as $\alpha_{j,k} = \sum_{i=1}^{d} \lambda_{i} u_{j,i}  v_{k,i}^{*}$ and substituting this values in Eq. (2)
+A particular element of a matrix $\alpha$ can be expression as $\alpha_{j,k} = \sum_{i=1}^{d} \lambda_{i} u_{j,i}  v_{k,i}^{*}$ and substituting this values in Eq. (2)
 
 $$
 \begin{equation}
@@ -43,4 +43,30 @@ $$
 \end{equation}
 $$  
 
-*Note: I don't understand the reason for arranging $\alpha_{j,k}$ it matrix form. This matrix arrangement has introduced artificial constrain on the dimension of composite system.
+where, $|i\rangle_{A}=\sum_{j} u_{j,i} |j\rangle_{A}$ and $|i\rangle_{B}=\sum_{k} v_{k,i}^{*} |k\rangle_{B}$ are unitary transformation of initial orthonormal basis os A and B.
+
+#### state of system A:
+The state of individual system A can be found by tracing out other system.
+
+$$
+\begin{equation}
+\begin{split}
+\rho_A = Tr_{B}(|\psi\rangle_{AB} \langle \psi\|_{AB})   \qquad  \\  
+ = Tr_{B}(\sum_{i=1}^{d} \lambda_{i}^{2} |i\rangle_{A} \langle i|_{A} \qquad \\  
+\end{split}
+\end{equation}
+$$  
+
+#### state of system B:
+The state of individual system A can be found by tracing out other system.
+
+$$
+\begin{equation}
+\begin{split}
+\rho_B = Tr_{A}(|\psi\rangle_{AB} \langle \psi\|_{AB})   \qquad  \\  
+ = Tr_{A}(\sum_{i=1}^{d} \lambda_{i}^{2} |i\rangle_{B} \langle i|_{B} \qquad \\  
+\end{split}
+\end{equation}
+$$  
+
+*Note: I don't understand the reason for arranging $\alpha_{j,k}$ in matrix form. This matrix arrangement has introduced artificial constrain on the dimension of composite system.
