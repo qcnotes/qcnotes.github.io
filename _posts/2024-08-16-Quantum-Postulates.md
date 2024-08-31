@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quantum Postulates"
+title: "1. Quantum Postulates"
 categories: misc
 ---
 
