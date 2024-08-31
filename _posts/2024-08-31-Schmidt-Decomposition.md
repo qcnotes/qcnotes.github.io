@@ -12,7 +12,7 @@ where, d is Schmidt rank, $\lambda_{i}$ are Schmidt coefficients, $\|i\rangle_{A
 
 ## Proof:
 
-Let ${ \|j\rangle_{A} }$ be any $n$ orthonormal basis of system A and and ${ \|k\rangle_{B} }$ be any $m$ orthonormal basis system B. Then, any pure state $\|\psi\rangle_{AB}$ of composite system can be expressed interms of orthonormal basis of A and B as
+Let $\{ \|j\rangle_{A} \}$ be any $n$ orthonormal basis of system A and and $\{ \|k\rangle_{B} \}$ be any $m$ orthonormal basis system B. Then, any pure state $\|\psi\rangle_{AB}$ of composite system can be expressed interms of orthonormal basis of A and B as
 
 $$ |\psi\rangle_{AB} = \sum_{j,k} \alpha_{j,k} |j\rangle_{A} |k\rangle_{B} $$  
 
@@ -36,11 +36,11 @@ A particular values of matrix can be expression as $\alpha_{j,k} = \sum_{i=1}^{d
 $$
 \begin{equation}
 \begin{split}
-|\psi\rangle_{AB} = \sum_{j,k} {\sum_{i=1}^{d} \lambda_{i} u_{j,i}  v_{k,i}^{*}} |j\rangle_{A} |k\rangle_{B} \qquad  \\
- =  \sum_{i=1}^{d} \lambda_{i}  {\sum_{j} u_{j,i} |j\rangle_{A}} {\sum_{k} v_{k,i}^{*} |k\rangle_{B}} \\
+|\psi\rangle_{AB} = \sum_{j,k} \{ \sum_{i=1}^{d} \lambda_{i} u_{j,i}  v_{k,i}^{*} \} |j\rangle_{A} |k\rangle_{B} \qquad  \\
+ =  \sum_{i=1}^{d} \lambda_{i}  \{ \sum_{j} u_{j,i} |j\rangle_{A} \} \{\sum_{k} v_{k,i}^{*} |k\rangle_{B} \} \\
  = \sum_{i=1}^{d} \lambda_{i} |i\rangle_{A} |i\rangle_{B} \qquad \qquad \qquad \quad \\
 \end{split}
 \end{equation}
 $$  
 
-*Note: I don't understand the reason for arranging $\alpha_{j,k}$ it matrix form. This matrix arrangement has introduced artificial constrain on the dimension of composite system.
+*\underline{Note}: I don't understand the reason for arranging $\alpha_{j,k}$ it matrix form. This matrix arrangement has introduced artificial constrain on the dimension of composite system.
