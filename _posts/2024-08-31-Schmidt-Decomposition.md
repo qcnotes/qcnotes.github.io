@@ -36,8 +36,8 @@ A particular element of a matrix $\alpha$ can be expression as $\alpha_{j,k} = \
 $$
 \begin{equation}
 \begin{split}
-|\psi\rangle_{AB} = \sum_{j,k} \{ \sum_{i=1}^{d} \lambda_{i} u_{j,i}  v_{k,i}^{*} \} |j\rangle_{A} |k\rangle_{B} \qquad  \\
- =  \sum_{i=1}^{d} \lambda_{i}  \{ \sum_{j} u_{j,i} |j\rangle_{A} \} \{\sum_{k} v_{k,i}^{*} |k\rangle_{B} \} \\
+|\psi\rangle_{AB} = \sum_{j,k} \{ \sum_{i=1}^{d} \lambda_{i} u_{j,i}  v_{k,i}^{*} \} |j\rangle_{A} |k\rangle_{B}  \\
+ = \sum_{i=1}^{d} \lambda_{i}  \{ \sum_{j} u_{j,i} |j\rangle_{A} \} \{\sum_{k} v_{k,i}^{*} |k\rangle_{B} \} \\
  = \sum_{i=1}^{d} \lambda_{i} |i\rangle_{A} |i\rangle_{B} \qquad \qquad \qquad \quad \\
 \end{split}
 \end{equation}
@@ -52,7 +52,7 @@ $$
 \begin{equation}
 \begin{split}
 \rho_A = Tr_{B}(|\psi \rangle_{AB} \langle \psi|_{AB})   \qquad  \\  
- = \sum_{i=1}^{d} \lambda_{i}^{2} |i\rangle_{A} \langle i|_{A} \qquad \qquad \\  
+ = \sum_{i=1}^{d} \lambda_{i}^{2} |i\rangle_{A} \langle i|_{A} \qquad \quad \\  
 \end{split}
 \end{equation}
 $$  
@@ -64,7 +64,7 @@ $$
 \begin{equation}
 \begin{split}
 \rho_B = Tr_{A}(|\psi \rangle_{AB} \langle \psi|_{AB})   \qquad  \\  
- = \sum_{i=1}^{d} \lambda_{i}^{2} |i\rangle_{B} \langle i|_{B} \qquad \qquad \\   
+ = \sum_{i=1}^{d} \lambda_{i}^{2} |i\rangle_{B} \langle i|_{B} \qquad \quad \\   
 \end{split}
 \end{equation}
 $$  
