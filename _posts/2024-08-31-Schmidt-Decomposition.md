@@ -43,4 +43,4 @@ $$
 \end{equation}
 $$  
 
-*\underline{Note}: I don't understand the reason for arranging $\alpha_{j,k}$ it matrix form. This matrix arrangement has introduced artificial constrain on the dimension of composite system.
+* \textbf{\underline{Note}}: I don't understand the reason for arranging $\alpha_{j,k}$ it matrix form. This matrix arrangement has introduced artificial constrain on the dimension of composite system.
