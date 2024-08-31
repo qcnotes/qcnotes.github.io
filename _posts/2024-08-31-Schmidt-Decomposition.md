@@ -4,7 +4,7 @@ title: "P3. Schmidt Decomposition"
 categories: misc
 ---
 
-Let $\|\psi\rangle_{AB}$ be a pure state of composite system A and B. The pure state $\|\psi\rangle_{AB}$ can be decomposed into  
+Let $\|\psi\rangle_{AB}$ be a pure state of any composite system A and B. The pure state $\|\psi\rangle_{AB}$ can be decomposed as  
 
 $$ |\psi\rangle_{AB} = \sum_{i=1}^{d} \lambda_{i} |i\rangle_{A} |i\rangle_{B} $$  
 
@@ -12,7 +12,7 @@ where, d is Schmidt rank, $\lambda_{i}$ are Schmidt coefficients, $\|i\rangle_{A
 
 ### Proof:
 
-Let $\{ \|j\rangle_{A} \}$ be any $n$ orthonormal basis of system A and and $\{ \|k\rangle_{B} \}$ be any $m$ orthonormal basis system B. Then, any pure state $\|\psi\rangle_{AB}$ of composite system can be expressed interms of orthonormal basis of A and B as
+Let $\{\|j\rangle_{A}\}$ be any $n$ orthonormal basis of system A and and $\{\|k\rangle_{B}\}$ be any $m$ orthonormal basis system B. Then, any pure state $\|\psi\rangle_{AB}$ of composite system can be expressed interms of orthonormal basis of A and B as
 
 $$ |\psi\rangle_{AB} = \sum_{j,k} \alpha_{j,k} |j\rangle_{A} |k\rangle_{B} $$  
 
@@ -31,7 +31,7 @@ $$
 = U \Lambda V^{+}=\sum_{i=1}^{d} \lambda_{i} u_{i}  v_{i}^{+}
 $$
 
-A particular element of a matrix $\alpha$ can be expression as $\alpha_{j,k} = \sum_{i=1}^{d} \lambda_{i} u_{j,i}  v_{k,i}^{*}$ and substituting this values in Eq. (2)
+A particular element of a matrix $\alpha$ can be expression as $\alpha_{j,k} = \sum_{i=1}^{d} \lambda_{i} u_{j,i}  v_{k,i}^{*}$ and substituting it in Eq. (2)
 
 $$
 \begin{equation}
@@ -46,7 +46,7 @@ $$
 where, $\|i\rangle_{A}=\sum_{j} u_{j,i} \|j\rangle_{A}$ and $\|i\rangle_{B}=\sum_{k} v_{k,i}^{*} \|k\rangle_{B}$ are unitary transformation of initial orthonormal basis of A and B.
 
 #### State of system A:
-The state of individual system A can be found by tracing out other system B.
+The state of individual system A can be found from $|\psi \rangle_{AB}$ by tracing out other system B.
 
 $$
 \begin{equation}
@@ -58,7 +58,7 @@ $$
 $$  
 
 #### State of system B:
-The state of individual system B can be found by tracing out other system A.
+The state of individual system B can be found from $|\psi \rangle_{AB}$ by tracing out other system A.
 
 $$
 \begin{equation}
@@ -69,4 +69,4 @@ $$
 \end{equation}
 $$  
 
-*Note: I don't understand the reason for arranging $\alpha_{j,k}$ in matrix form. This matrix arrangement has introduced artificial constrain on the dimension of composite system.
+*Note: I don't understand the reason for arranging $\alpha_{j,k}$ in a matrix form. This matrix arrangement has introduced artificial constraint on the dimension of composite system.
