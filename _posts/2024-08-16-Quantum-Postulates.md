@@ -16,7 +16,7 @@ such that,
 These conditions are required to ensure probability axioms. This postive linear map is known as Density operator. 
 
 ## 2) Evolution postulate:  
-The quantum system evolves unitarily as  
+The closed quantum system evolves unitarily as  
 
 $$\rho' = U \rho U^{+}$$  
 
