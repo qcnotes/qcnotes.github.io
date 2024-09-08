@@ -25,7 +25,7 @@ where, $p_{i}$ are eigen values, and $\|e\rangle_{A}$ are eigen states of system
 
 $$|\psi\rangle_{AR} = \sum_{i=1}^{n} \sqrt{p_{i}} |e\rangle_{A} |f\rangle_{R}$$
 
-If we trace out R from composite pure state, we get
+If we trace out R from composite system, we get
 
 $$ \rho_{A} = Tr_R (|\psi\rangle_{AR} \langle \psi|_{AR} ) $$
 
