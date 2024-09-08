@@ -1,9 +1,6 @@
 ---
-layout: post
+layout: page
 title: "P2. Quantum Teleportation"
-categories: misc
-sidebar_label: P2. Quantum Teleportation
-id: P2. Quantum Teleportation
 ---
 
 The transfer protocal of an arbitrary quantum state from Alice to Bob is called Quantum teleportation. This protocol requires additional resource in the form of shared entangled Bell state and 2-bit classical communication between them.  
