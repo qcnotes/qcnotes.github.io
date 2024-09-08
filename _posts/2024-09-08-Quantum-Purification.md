@@ -4,13 +4,13 @@ title: "P4. Quantum Purification"
 categories: misc
 ---
 
-By Schmidt Decomposition, the pure state $|\psi\rangle_{AB}$ of composite system A & B can be decomposed as
+By Schmidt Decomposition, the pure state $\|\psi\rangle_{AB}$ of composite system A & B can be decomposed as
 
-$$|\psi\rangle_{AB} = \sum_{i=1}^{d} \lambda_{i} |i\rangle_{A} |i\rangle_{B}$$
+$$\|\psi\rangle_{AB} = \sum_{i=1}^{d} \lambda_{i} \|i\rangle_{A} \|i\rangle_{B}$$
 
-where, $\lambda_{i}$ are Schmidt coefficients, $d$ is Schmidt rank, $|i\rangle_{A}$ & $|i\rangle_{B}$ are Schmidt basis. We have seen that, the state of individual systems A & B are mixed states even though the composite system was pur state.
+where, $\lambda_{i}$ are Schmidt coefficients, $d$ is Schmidt rank, $\|i\rangle_{A}$ & $\|i\rangle_{B}$ are Schmidt basis. We have seen that, the state of individual systems A & B are mixed states even though the composite system was pur state.
 
-$$\rho_{A} = \sum_{i=1}^{d} \lambda_{i}^2 |i\rangle_{A} \langle i|_{A}$$
+$$\rho_{A} = \sum_{i=1}^{d} \lambda_{i}^2 \|i\rangle_{A} \langle i\|_{A}$$
 
 Can any mixed state of system A be associated with pure state in larger composite quantum system A & B? Quantum purification provides the answer.  
 
