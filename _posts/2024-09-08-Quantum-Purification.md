@@ -22,6 +22,6 @@ where, $p_{i}$ are eigen values, and $\|e\rangle_{A}$ are eigen states of system
 
 $$\|\psi\rangle_{AR} = \sum_{i=1}^{n} \sqrt{p_{i}} \|e\rangle_{A} \|f\rangle_{R}$$
 
-If we trace out R from $Tr_R\{|\psi\rangle_{AR} \langle \phi|_{AR}\} \text{, then we get} \rho_{A} $. The pure state association is not unique since orthonormal basis of system R is not unique. We can select different orthonormal basis and get different pure state in larger composite system.
+If we trace out R from $Tr_R\{\|\psi\rangle_{AR} \langle \phi\|_{AR}\} \text{, then we get} \rho_{A} $. The pure state association is not unique since orthonormal basis of system R is not unique. We can select different orthonormal basis and get different pure state in larger composite system.
 
 *Note: what is the physical signicance of quantum purification?
