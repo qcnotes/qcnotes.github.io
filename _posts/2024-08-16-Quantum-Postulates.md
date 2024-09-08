@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: "post"
 title: "P1. Quantum Postulates"
 ---
 
