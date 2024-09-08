@@ -2,6 +2,7 @@
 layout: post
 title: "P1. Quantum Postulates"
 categories: misc
+sidebar_label: P1. Quantum Postulates
 ---
 
 ## 1) State postulate:  
