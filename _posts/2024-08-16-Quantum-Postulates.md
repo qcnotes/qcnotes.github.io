@@ -6,7 +6,7 @@ sidebar_label: P1. Quantum Postulates
 id: P1. Quantum Postulates
 ---
 
-## 1) State postulate:  
+### 1) State postulate:  
 Every quantum system A is associated with Hilbert space $H_A$. The state of quantum system is described by positive linear map   
 
   $$\rho: H_A \to H_A$$  
@@ -17,13 +17,13 @@ such that,
 
 These conditions are required to ensure probability axioms. This postive linear map is known as Density operator. 
 
-## 2) Evolution postulate:  
+### 2) Evolution postulate:  
 The closed quantum system evolves unitarily as  
 
 $$\rho' = U \rho U^{+}$$  
 
 where, U is unitary operator and $\rho'$ is new state after evolution. Again, the unitary condition is required to ensure probability axioms.  
-## 3) Measurement postulate:  
+### 3) Measurement postulate:  
 The measurement of quantum system is probabilistic in nature and it is represented by postive semi-defintie Hermittian matrices $\\{M_i\\}$ satisfying the completeness condition  
 
 $$\sum_{i=1}^{d} M_i=1$$  
@@ -33,7 +33,7 @@ The probability of measuring outcome $i$ is $p(i)=tr(M_{i} \rho M_{i}^{+})$ and 
 
 $$\rho_{i}' = \frac{M_{i} \rho M_{i}^{+}}{tr(M_{i} \rho M_{i}^{+})}$$  
 
-## 4) Composite system postulate:  
+### 4) Composite system postulate:  
 Let A and B be two quantum systems associated with corresponding Hilbert space $H_A$ and $H_B$. The associated Hilbert space of composite system $A \otimes B$ is $H_A \otimes H_B$.  
 The state of composite system is described as  
 
