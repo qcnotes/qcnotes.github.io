@@ -1,9 +1,6 @@
 ---
-layout: post
+layout: page
 title: "P1. Quantum Postulates"
-categories: misc
-sidebar_label: P1. Quantum Postulates
-id: P1. Quantum Postulates
 ---
 
 #### 1) **State postulate:**
