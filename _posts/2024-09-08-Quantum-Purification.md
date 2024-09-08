@@ -15,7 +15,7 @@ where, $\lambda_{i}$ are Schmidt coefficients, $d$ is Schmidt rank, $\|i\rangle_
 
 $$\rho_{A} = \sum_{i=1}^{d} \lambda_{i}^2 |i\rangle_{A} \langle i|_{A}$$
 
-Can any mixed state of system A be associated with pure state in larger composite quantum system A & B? Quantum purification provides the answer.  
+Can any mixed state of smaller system A be associated with pure state in larger composite quantum system A & B? Quantum purification provides the answer.  
 
 #### **Quantum purification:**
 
