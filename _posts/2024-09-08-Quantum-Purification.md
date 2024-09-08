@@ -13,7 +13,7 @@ $$|\psi\rangle_{AB} = \sum_{i=1}^{d} \lambda_{i} |i\rangle_{A} |i\rangle_{B}$$
 
 where, $\lambda_{i}$ are Schmidt coefficients, $d$ is Schmidt rank, $\|i\rangle_{A}$ & $\|i\rangle_{B}$ are Schmidt basis. We have seen that, the state of individual systems A & B are mixed states as provided below even though the composite system was pure state.
 
-$$\rho_{A} = \sum_{i=1}^{d} \lambda_{i}^2 |i\rangle_{A} \langle i|_{A}$$
+$$\rho_{A} = \sum_{i=1}^{d} \lambda_{i}^2 |i\rangle_{A} \langle i|_{A} and \rho_{B} = \sum_{i=1}^{d} \lambda_{i}^2 |i\rangle_{B} \langle i|_{B} $$
 
 Can any mixed state of smaller system A be associated with pure state in larger composite quantum system A & B? Quantum purification provides the answer.  
 
