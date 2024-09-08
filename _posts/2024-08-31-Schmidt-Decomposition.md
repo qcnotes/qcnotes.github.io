@@ -2,6 +2,7 @@
 layout: post
 title: "P3. Schmidt Decomposition"
 categories: misc
+sidebar_label: P3. Schmidt Decomposition
 ---
 
 Let $\|\psi\rangle_{AB}$ be a pure state of any composite system A and B. The pure state $\|\psi\rangle_{AB}$ can be decomposed as  
