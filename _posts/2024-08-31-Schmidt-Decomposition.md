@@ -12,7 +12,7 @@ $$ |\psi\rangle_{AB} = \sum_{i=1}^{d} \lambda_{i} |i\rangle_{A} |i\rangle_{B} $$
 
 where, d is Schmidt rank, $\lambda_{i}$ are Schmidt coefficients, $\|i\rangle_{A}$ and $\|i\rangle_{B}$ are Schmidt basis.
 
-### Proof:
+#### Proof:
 
 Let $\{\|j\rangle_{A}\}$ be any $n$ orthonormal basis of system A and and $\{\|k\rangle_{B}\}$ be any $m$ orthonormal basis system B. Then, any pure state $\|\psi\rangle_{AB}$ of composite system can be expressed interms of orthonormal basis of A and B as
 
