@@ -44,7 +44,10 @@ minima:
   skin: auto
 
   sidebar:
-  - getting-started
+  - P4. Quantum Purification
+  - P3. Schmidt Decomposition
+  - P2. Quantum Teleportation
+  - P1. Quantum Postulates
 
   search_enabled: true
   
