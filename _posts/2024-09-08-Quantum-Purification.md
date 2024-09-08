@@ -21,11 +21,11 @@ Can any mixed state of system A be associated with pure state in larger composit
 
 Quantum purification is a mathematical construct to associate a pure state $\|\psi\rangle_{AR}$ in larger composite system A & R to any mixed state $\rho_{A}$ of smallar system A. Let $\rho_{A}$ be mixed state of quantum system A with dimenstion $n$. Since $\rho_{A}$ is positive density operator, it has spectral decomposition
 
-$$\rho_{A} = \sum_{i=1}^{n} p_{i} |e\rangle_{A} \langle e|_{A}$$
+$$\rho_{A} = \sum_{i=1}^{n} p_{i} |e_{i}\rangle_{A} \langle e_{i}|_{A}$$
 
-where, $p_{i}$ are eigen values, and $\|e\rangle_{A}$ are eigen states of system A. Let us consider another reference system R with the same dimension as A. Let $\|f\rangle_{A}$ be any orthonormal basis of system R. We can construct a pure state in composite system A & R as
+where, $p_{i}$ are eigen values, and $\|e_{i}\rangle_{A}$ are eigen states of system A. Let us consider another reference system R with the same dimension as A. Let $\|f_{i}\rangle_{A}$ be any orthonormal basis of system R. We can construct a pure state in composite system A & R as
 
-$$|\psi\rangle_{AR} = \sum_{i=1}^{n} \sqrt{p_{i}} |e\rangle_{A} |f\rangle_{R}$$
+$$|\psi\rangle_{AR} = \sum_{i=1}^{n} \sqrt{p_{i}} |e_{i}\rangle_{A} |f_{i}\rangle_{R}$$
 
 If we trace out R from composite system, we get
 
