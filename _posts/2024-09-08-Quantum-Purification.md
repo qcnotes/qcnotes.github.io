@@ -3,6 +3,7 @@ layout: post
 title: "P4. Quantum Purification"
 categories: misc
 sidebar_label: P4. Quantum Purification
+id: P4. Quantum Purification
 ---
 
 ### Schmidt Decomposition:
