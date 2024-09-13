@@ -17,4 +17,6 @@ Figure
 
 We are however interested in the system A’s evolution and it's the final state $\varepsilon(\rho)$ post evolution. The unitary evolution has entangled quantum system A & E and to obtain state of system A, the environment E must be traced out from the composite system.  
 
-Equation
+$$
+\psi_{AE} = U(\rho \otimes |e_{0}\rangle \langle e_{0}|)U^{+}
+$$
