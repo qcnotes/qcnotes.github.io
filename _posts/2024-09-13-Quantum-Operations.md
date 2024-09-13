@@ -39,5 +39,5 @@ $$
 \end{equation}
 $$
 
-where, $E_{i}=\langle e_{i}\|_{E}U_{SE}\|e_{0}\rangle_{E}$ is called Krauss operators. The above equation is called Choi-Krauss representation or Operator-Sum representation of quantum operations.  
+where, $\|e_{i}\rangle_{E}$ is called Krauss operators. The above equation is called Choi-Krauss representation or Operator-Sum representation of quantum operations.  
 
