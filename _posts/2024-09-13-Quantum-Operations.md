@@ -13,7 +13,7 @@ We would look at open quantum system evolution in this blog post. The open quant
 
 Let us consider a system A with its Hilbert space $H_{A}$. The quantum system A is open system, and it interact with environment E. Let E's Hilbert space be $H_{E}$. We can safely assume that the composite system A & E is closed quantum system, and it evolves unitarily $U_{AE}$ as depicted in the below figure.  
 
-Figure  
+![quantum operation image](/assets/images/quantum_operations.jpg)   
 
 We are however interested in the system A’s evolution and it's the final state $\varepsilon(\rho)$ post evolution. The unitary evolution has entangled quantum system A & E and to obtain state of system A, the environment E must be traced out from the composite system.  
 
