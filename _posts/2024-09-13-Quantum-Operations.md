@@ -39,5 +39,17 @@ $$
 \end{equation}
 $$
 
-The above equation is called Choi-Krauss representation or Operator-Sum representation of quantum operations. The $$E_{i}=\langle e_{i}\|_{E}U_{SE}\|e_{0}\rangle_{E}$$ are called Krauss operators. 
+The above equation is called Choi-Krauss representation or Operator-Sum representation of quantum operations. The $$E_{i}=\langle e_{i}|_{E}U_{SE}|e_{0}\rangle_{E}$$ are called Krauss operators and satisfy 
+
+$$
+\begin{equation}
+\begin{split}
+\sum_{i=1}^{N} E_{i}^{+} E_{i} = \sum_{i=1}^{N} (\langle e_{0}|_{E} U_{SE}^{+} |e_{i}\rangle_{E})(\langle e_{i}|_{E} U_{SE} |e_{0}\rangle_{E}) \\
+= \langle e_{0}|_{E} U_{SE}^{+} \sum_{i=1}^{N} |e_{i}\rangle_{E} \langle e_{i}|_{E} U_{SE} |e_{0}\rangle_{E} \\
+= \langle e_{0}|_{E} U_{SE}^{+} I U_{SE} |e_{0}\rangle_{E}  \qquad \qquad \\
+= \langle e_{0}|_{E} I |e_{0}\rangle_{E}  \qquad \qquad \\
+= I  \qquad \qquad  \qquad \qquad \\
+\end{split}
+\end{equation}
+$$
 
