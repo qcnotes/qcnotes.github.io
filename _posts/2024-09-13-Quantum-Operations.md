@@ -46,10 +46,10 @@ $$
 \begin{split}
 \sum_{i=1}^{N} E_{i}^{+} E_{i} = \sum_{i=1}^{N} (\langle e_{0}|_{E} U_{SE}^{+} |e_{i}\rangle_{E})(\langle e_{i}|_{E} U_{SE} |e_{0}\rangle_{E}) \\
 = \langle e_{0}|_{E} U_{SE}^{+} (\sum_{i=1}^{N} |e_{i}\rangle_{E} \langle e_{i}|_{E}) U_{SE} |e_{0}\rangle_{E} \\
-= \langle e_{0}|_{E} U_{SE}^{+} (I) U_{SE} |e_{0}\rangle_{E}  \qquad \qquad \quad \\
+= \langle e_{0}|_{E} U_{SE}^{+} (I) U_{SE} |e_{0}\rangle_{E}  \qquad \qquad \\
 = \langle e_{0}|_{E} (U_{SE}^{+} U_{SE}) |e_{0}\rangle_{E}  \qquad \qquad \quad \\
-= \langle e_{0}|_{E} |e_{0}\rangle_{E}  \qquad \qquad  \qquad \qquad \\
-= I  \qquad \qquad  \qquad \qquad  \qquad \qquad  \qquad \qquad \\
+= \langle e_{0}|_{E} |e_{0}\rangle_{E}  \qquad \qquad  \qquad \qquad \quad \\
+= I  \qquad \qquad  \qquad \qquad  \qquad \qquad \\
 \end{split}
 \end{equation}
 $$
