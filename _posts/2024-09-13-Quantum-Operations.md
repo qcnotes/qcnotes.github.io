@@ -22,7 +22,8 @@ We are however interested in the system S’s evolution and it's final state $\v
 The composite state of system S & E is  
 $$
 \sigma_{SE} = U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+}  \qquad \\
-$$  
+$$
+
 By tracing out the environment, we obtain evolved state of  system S as,  
 $$
 \begin{equation}
@@ -33,7 +34,8 @@ $$
   \qquad   \qquad =\sum_{i=1}^{N} E_{i} \rho_{S} E_{i}^{i}   \qquad \\
 \end{split}
 \end{equation}
-$$  
+$$
 
-where, $E_{i}=$\langle e_{i}\|_{E} U_{SE}\|e_{0}\rangle_{E}$ is called Krauss operators. The above equation is called Choi-Krauss representation of quantum operations or operator-sum representation of quantum operations.
+
+where, $E_{i} = \langle e_{i}\|_{E} U_{SE}\|e_{0}\rangle_{E}$ is called Krauss operators. The above equation is called Choi-Krauss representation or Operator-Sum representation of quantum operations.
 
