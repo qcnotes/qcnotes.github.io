@@ -11,7 +11,7 @@ Are these the only quantum transformations possible? Are there any other quantum
 
 We would look at open quantum system evolution in this blog post. The open quantum system evolution is called Quantum operations or Quantum channel or Quantum noisy channel.  
 
-Let us consider a system S with its Hilbert space $H_{S}$. The quantum system S is open system, and it interact with environment E. Let E's Hilbert space be $H_{E}$. We can safely assume that the composite system S & E is closed quantum system, and it evolves unitarily $U_{SE}$ as depicted in the below figure.  
+Let us consider a system S with its Hilbert space $H_{S}$. The quantum system S is open system, and it interact with environment E. Let E's Hilbert space be $H_{E}$ and $|e_{i}\rangle_{E}$ be its orthonormal basis. We can safely assume that the composite system S & E is closed quantum system, and it evolves unitarily $U_{SE}$ as depicted in the below figure.  
 
 ![quantum operation image](/assets/images/quantum_operations.jpg)   
 
@@ -27,13 +27,13 @@ By tracing out the environment, we obtain evolved state of  system S as,
 $$
 \begin{equation}
 \begin{split}
-\varepsilon(\rho) = Tr_{E}(|\psi\rangle_{SE})  \qquad \\
-= Tr_{E}(U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+})  \qquad \\
-=\sum_{i=1}^{N} \langle e_{i}|_{E} U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+} |e_{i}\rangle_{E}   \qquad \\
-=\sum_{i=1}^{N} E_{i} \rho_{S} E_{i}^{i}   \qquad \\
+\varepsilon(\rho) = Tr_{E}\{\sigma_{SE}\}  \qquad \\
+  \qquad   \qquad = Tr_{E}(U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+})  \qquad \\
+  \qquad   \qquad =\sum_{i=1}^{N} \langle e_{i}|_{E} U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+} |e_{i}\rangle_{E}   \qquad \\
+  \qquad   \qquad =\sum_{i=1}^{N} E_{i} \rho_{S} E_{i}^{i}   \qquad \\
 \end{split}
 \end{equation}
 $$  
 
-where, $E_{i}=$\langle e_{i}|_{E} U_{SE}|e_{0}\rangle_{E}$ is called Krauss operators. The above equation is called Choi-Krauss representation of quantum operations or operator-sum representation of quantum operations.
+where, $$E_{i}=$\langle e_{i}|_{E} U_{SE}|e_{0}\rangle_{E}$$ is called Krauss operators. The above equation is called Choi-Krauss representation of quantum operations or operator-sum representation of quantum operations.
 
