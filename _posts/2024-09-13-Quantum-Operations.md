@@ -9,7 +9,7 @@ We had looked at two quantum transformations of a system so far in the previous 
 
 Are these the only quantum transformations possible? Are there any other quantum transformations that need to be looked at? We have overlooked another important quantum system (i.e) open quantum system. How does open quantum system that interacts with its surrounding environment evolve? Does open quantum system evolve unitarily?  
 
-We would look at open quantum system evolution in this blog post. The open quantum system evolution is called Quantum operations or Quantum channel or Quantum noisy channel.  
+We would look at open quantum system evolution in this blog post. The open quantum system evolution is called Quantum operations or Quantum channel or Quantum noisy channel. The open quantum system evolution is non-reversible and loses information in the process.
 
 Let us consider a system S with its Hilbert space $H_{S}$. The quantum system S is open system, and it interact with environment E. Let E's Hilbert space be $H_{E}$ and $\|e_{i}\rangle_{E}$ be its orthonormal basis. We can safely assume that the composite system S & E is closed quantum system, and it evolves unitarily $U_{SE}$ as depicted in the below figure.  
 
@@ -39,16 +39,16 @@ $$
 \end{equation}
 $$
 
-The above equation is called Choi-Krauss representation or Operator-Sum representation of quantum operations. The $$E_{i}=\langle e_{i}\|_{E} U_{SE}|e_{0}\rangle_{E}$$ are called Krauss operators and they satisfy 
+The above equation is called Choi-Krauss representation or Operator-Sum representation of quantum operations. The $$E_{i}=\langle e_{i}\|_{E} U_{SE}\|e_{0}\rangle_{E}$$ are called Krauss operators and they satisfy 
 
 $$
 \begin{equation}
 \begin{split}
 \sum_{i=1}^{N} E_{i}^{+} E_{i} = \sum_{i=1}^{N} (\langle e_{0}|_{E} U_{SE}^{+} |e_{i}\rangle_{E})(\langle e_{i}|_{E} U_{SE} |e_{0}\rangle_{E}) \\
-= \langle e_{0}|_{E} U_{SE}^{+} (\sum_{i=1}^{N} |e_{i}\rangle_{E} \langle e_{i}|_{E}) U_{SE} |e_{0}\rangle_{E} \\
+= \langle e_{0}|_{E} U_{SE}^{+} (\sum_{i=1}^{N} |e_{i}\rangle_{E} \langle e_{i}|_{E}) U_{SE} |e_{0}\rangle_{E} \quad \\
 = \langle e_{0}|_{E} U_{SE}^{+} (I) U_{SE} |e_{0}\rangle_{E} \qquad \qquad \quad \\
 = \langle e_{0}|_{E} (U_{SE}^{+} U_{SE}) |e_{0}\rangle_{E} \qquad \qquad \quad \\
-= \langle e_{0}|_{E} |e_{0}\rangle_{E} \qquad \qquad \qquad \qquad \\
+= \langle e_{0}|_{E} |e_{0}\rangle_{E} \qquad \qquad \qquad \quad \quad \\
 = I \qquad \qquad \qquad \qquad \qquad \quad \quad \\
 \end{split}
 \end{equation}
