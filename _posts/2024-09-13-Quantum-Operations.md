@@ -17,21 +17,23 @@ Let us consider a system S with its Hilbert space $H_{S}$. The quantum system S 
 
 *Fig.1 Quantum operations* 
 
-We are however interested in the system S’s evolution and it's final state $\varepsilon(\rho)$ post evolution. The unitary evolution has entangled quantum system S & E and to obtain state of system s, the environment E must be traced out from the composite system.  
+We are however interested in the system S’s final state $\varepsilon(\rho)$ post evolution. The unitary evolution has entangled quantum system S & E and to obtain state of system s, the environment E must be traced out from the composite system.  
 
 The composite state of system S & E is  
+
 $$
 \sigma_{SE} = U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+}  \qquad \\
 $$
 
 By tracing out the environment, we obtain evolved state of  system S as,  
+
 $$
 \begin{equation}
 \begin{split}
-\varepsilon(\rho) = Tr_{E}\{\sigma_{SE}\}  \qquad \\
-  \qquad   \qquad = Tr_{E}(U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+})  \qquad \\
-  \qquad   \qquad =\sum_{i=1}^{N} \langle e_{i}|_{E} U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+} |e_{i}\rangle_{E}   \qquad \\
-  \qquad   \qquad =\sum_{i=1}^{N} E_{i} \rho_{S} E_{i}^{i}   \qquad \\
+\varepsilon(\rho) = Tr_{E}\{\sigma_{SE}\} \\
+  \qquad   \qquad = Tr_{E}(U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+}) \\
+  \qquad   \qquad =\sum_{i=1}^{N} \langle e_{i}|_{E} U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+} |e_{i}\rangle_{E} \\
+  \qquad   \qquad =\sum_{i=1}^{N} E_{i} \rho_{S} E_{i}^{i} \\
 \end{split}
 \end{equation}
 $$
