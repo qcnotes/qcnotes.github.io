@@ -2,7 +2,7 @@
 layout: "post"
 title: "P5. Quantum Operations"
 ---
-We had looked at two transformations of quantum system so far in the previous blog post.
+We had looked at two quantum transformations of a system so far in the previous blog post.
 
 - Closed system unitary evolution that is reversible and preserves information.
 - Measurement that is non-reversible, probabilistic, and loses information in the process.
@@ -11,12 +11,14 @@ Are these the only quantum transformations possible? Are there any other quantum
 
 We would look at open quantum system evolution in this blog post. The open quantum system evolution is called Quantum operations or Quantum channel or Quantum noisy channel.  
 
-Let us consider a system A with its Hilbert space $H_{A}$. The quantum system A is open system, and it interact with environment E. Let E's Hilbert space be $H_{E}$. We can safely assume that the composite system A & E is closed quantum system, and it evolves unitarily $U_{AE}$ as depicted in the below figure.  
+Let us consider a system S with its Hilbert space $H_{S}$. The quantum system S is open system, and it interact with environment E. Let E's Hilbert space be $H_{E}$. We can safely assume that the composite system S & E is closed quantum system, and it evolves unitarily $U_{SE}$ as depicted in the below figure.  
 
 ![quantum operation image](/assets/images/quantum_operations.jpg)   
 
-We are however interested in the system A’s evolution and it's the final state $\varepsilon(\rho)$ post evolution. The unitary evolution has entangled quantum system A & E and to obtain state of system A, the environment E must be traced out from the composite system.  
+*Fig.1 Quantum operations* 
+
+We are however interested in the system S’s evolution and it's final state $\varepsilon(\rho)$ post evolution. The unitary evolution has entangled quantum system S & E and to obtain state of system s, the environment E must be traced out from the composite system.  
 
 $$
-\psi_{AE} = U(\rho \otimes |e_{0}\rangle \langle e_{0}|)U^{+}
+|\psi\rangle_{SE} = U_{SE}(\rho_{S} \otimes |e_{0}\rangle_\{E\} \langle e_{0}|_\{E\})U_{SE}^{+}
 $$
