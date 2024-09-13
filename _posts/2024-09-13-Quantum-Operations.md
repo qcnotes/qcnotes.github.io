@@ -30,10 +30,10 @@ By tracing out the environment, we obtain evolved state of  system S as,
 $$
 \begin{equation}
 \begin{split}
-\varepsilon(\rho) = Tr_{E}\{\sigma_{SE}\} \\
-  \qquad   \qquad = Tr_{E}(U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+}) \\
-  \qquad   \qquad =\sum_{i=1}^{N} \langle e_{i}|_{E} U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+} |e_{i}\rangle_{E} \\
-  \qquad   \qquad =\sum_{i=1}^{N} E_{i} \rho_{S} E_{i}^{i} \\
+\varepsilon(\rho) = Tr_{E}\{\sigma_{SE}\} \qquad   \qquad \\
+= Tr_{E}(U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+}) \\
+=\sum_{i=1}^{N} \langle e_{i}|_{E} U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+} |e_{i}\rangle_{E} \\
+=\sum_{i=1}^{N} E_{i} \rho_{S} E_{i}^{i} \\
 \end{split}
 \end{equation}
 $$
