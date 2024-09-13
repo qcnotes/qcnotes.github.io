@@ -32,9 +32,9 @@ $$
 \begin{split}
 \varepsilon(\rho) = Tr_{E}\{\sigma_{SE}\} \qquad \qquad \qquad \qquad \qquad \qquad \\
 = Tr_{E}\{U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E})U_{SE}^{+}\} \qquad \qquad \\
-=\sum_{i=1}^{N} \langle e_{i}|_{E} U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E}) U_{SE}^{+} |e_{i}\rangle_{E} \quad \\
-=\sum_{i=1}^{N} (\langle e_{i}|_{E} U_{SE} |e_{0}\rangle_{E}) \rho_{S}  (\langle e_{0}|_{E} U_{SE}^{+} |e_{i}\rangle_{E}) \quad \quad \\
-=\sum_{i=1}^{N} E_{i} \rho_{S} E_{i}^{+} \qquad \qquad \qquad \qquad \qquad \qquad \\
+=\sum_{i=1}^{N} \langle e_{i}|_{E} U_{SE}(\rho_{S} \otimes |e_{0}\rangle_{E} \langle e_{0}|_{E}) U_{SE}^{+} |e_{i}\rangle_{E} \quad \quad \\
+=\sum_{i=1}^{N} (\langle e_{i}|_{E} U_{SE} |e_{0}\rangle_{E}) \rho_{S}  (\langle e_{0}|_{E} U_{SE}^{+} |e_{i}\rangle_{E}) \quad \quad \quad \\
+=\sum_{i=1}^{N} E_{i} \rho_{S} E_{i}^{+} \qquad \qquad \qquad \qquad \qquad \quad \quad \\
 \end{split}
 \end{equation}
 $$
