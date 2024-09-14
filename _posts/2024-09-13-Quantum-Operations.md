@@ -10,7 +10,7 @@ $$
 \begin{equation}
 \begin{split}
 \mathcal{U}: \mathcal{S}(H) \rightarrow \mathcal{S}(H) \quad \\
-\rho \rightarrow U \rho U^{+} \\
+\rho \rightarrow U \rho U^{+} \quad \\
 \end{split}
 \end{equation}
 $$  
@@ -33,7 +33,7 @@ $$
 \begin{equation}
 \begin{split}
 \mathcal{M}: \mathcal{S}(H) \rightarrow \mathcal{S}(H) \quad \quad \quad \\
-\rho \rightarrow \sum_{i=1}^{d} M_{i} \rho M_{i}^{+} \\
+\rho \rightarrow \sum_{i=1}^{d} M_{i} \rho M_{i}^{+} \quad \\
 \end{split}
 \end{equation}
 $$  
