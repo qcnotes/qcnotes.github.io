@@ -21,12 +21,11 @@ $$\rho' = U \rho U^{+}$$
 
 where, U is unitary operator and $\rho'$ is new state after evolution. Again, the unitary condition is required to ensure probability axioms.  
 #### 3) **Measurement postulate:**
-The measurement of quantum system is probabilistic in nature and it is represented by postive semi-defintie Hermittian matrices $\\{M_i\\}$ satisfying the completeness condition  
+The measurement of quantum system is probabilistic in nature and it is represented by matrices $\\{M_i\\}$ satisfying the condition  
 
-$$\sum_{i=1}^{d} M_i=1$$  
+$$\sum_{i=1}^{d} M_{i}^{+} M_i=1$$  
 
-These measurements are known as Positive Operator Valued Measure(POVM).  
-The probability of measuring outcome $i$ is $p(i)=tr(M_{i} \rho M_{i}^{+})$ and state of quantum system after measurement is  
+These measurements are known as Positive Operator Valued Measure(POVM). The probability of measuring outcome $i$ is $p(i)=tr(M_{i} \rho M_{i}^{+})$ and state of quantum system after measurement is  
 
 $$\rho_{i}' = \frac{M_{i} \rho M_{i}^{+}}{tr(M_{i} \rho M_{i}^{+})}$$  
 
