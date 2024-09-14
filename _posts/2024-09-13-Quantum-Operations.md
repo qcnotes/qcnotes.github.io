@@ -65,7 +65,7 @@ $$
 
 preserving trace $Tr(\mathcal{E}(\rho)) = 1$ and positivity $\mathcal{E}(\rho) \geqslant 0 $. The general quantum system should satisfy complete positivity in addition to positive which we shall look at in the later post.
 
-#### Open Quantum system
+#### Open Quantum system:
 We have overlooked another important quantum system, that is open quantum system. How does open quantum system that interacts with its surrounding environment evolve? Does open quantum system evolve unitarily?  
 
 We would look at open quantum system evolution in this blog post. The open quantum system evolution is called Quantum operations or Quantum channel or Quantum noisy channel. The open quantum system evolution is non-reversible and loses information in the process.
