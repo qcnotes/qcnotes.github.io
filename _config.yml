@@ -31,9 +31,10 @@ header_pages:
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
 
-comments:
- utterances:
-  repo: "qcnotes/qcnotes.github.io"
+html:
+  comments:
+    utterances:
+      repo: "qcnotes/qcnotes.github.io"
       
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
