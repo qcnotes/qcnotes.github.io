@@ -8,11 +8,11 @@ Every quantum system A is associated with Hilbert space $H_A$. The state of quan
 
   $$\rho: H_A \to H_A$$  
 
-such that,  
+satisfying,  
 
   $$\rho >= 0, Tr(\rho) = 1$$  
 
-These conditions are required to ensure probability axioms. This postive linear map is known as Density operator. 
+These positivity and trace one conditions are required to ensure probability axioms. This postive linear map is known as Density operator. 
 
 #### 2) **Evolution postulate:** 
 The closed quantum system evolves unitarily as  
