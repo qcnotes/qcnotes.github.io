@@ -2,9 +2,10 @@
 layout: "post"
 title: "P5. Quantum Operations - Part I"
 ---
-We had looked at two quantum transformations so far in the previous blog post.
+We had looked at two quantum transformations such as closed system unitary evolution and measurement so far in the previous blog post. Let us evaluate if these two transformations final state satisfies positivity and trace one conditions of quantum state postulate one.
 
-- Closed system unitary evolution: It is a linear map from set of density operators to another set of density operator.
+#### 1. Closed system unitary evolution: 
+It is a linear map from set of density operators to another set of density operator.
 
 $$
 \begin{equation}
@@ -27,7 +28,8 @@ $$
 U \rho U^{+} = (U \sqrt\rho) (\sqrt\rho U^{+}) \geqslant 0 
 $$
 
-- Measurement:  It is another linear map from from set of density operators to another set of density operator.
+#### 2.Measurement:  
+It is another linear map from from set of density operators to another set of density operator.
 
 $$
 \begin{equation}
