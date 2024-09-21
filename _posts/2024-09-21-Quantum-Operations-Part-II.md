@@ -42,10 +42,9 @@ $$
 = \langle e_{0}|_{E} U_{SE}^{+} (\sum_{i=1}^{N} |e_{i}\rangle_{E} \langle e_{i}|_{E}) U_{SE} |e_{0}\rangle_{E} \\
 = \langle e_{0}|_{E} (U_{SE}^{+} U_{SE}) |e_{0}\rangle_{E} \qquad \qquad \quad \\
 = \langle e_{0}|_{E} |e_{0}\rangle_{E} \qquad \qquad \qquad \quad \quad \\
+= I \qquad \qquad \qquad \qquad \qquad \quad \quad \\
 \end{split}
 \end{equation}
 $$
 
-$$
-\sum_{i=1}^{N} E_{i}^{+} E_{i} = I \qquad \qquad \qquad \qquad \qquad \quad \quad \\
-$$
+The noise in quantum system is represented by Kraus operators $\{E_{i}\}$ satifying $\sum_{i=1}^{N} E_{i}^{+} E_{i} = I$.
