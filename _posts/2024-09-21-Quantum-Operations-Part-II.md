@@ -4,7 +4,7 @@ title: "P6. Quantum Operations - Part II"
 ---
 
 #### Open Quantum system:
-We have overlooked another important quantum system (i.e) open quantum system. How does open quantum system that interacts with its surrounding environment evolve? Does open quantum system evolve unitarily? The open quantum system evolution is called Quantum operations or Quantum channel or Quantum noisy channel. The open quantum system evolution is non-reversible and loses information in the process.
+How does open quantum system that interacts with its surrounding environment evolve? Does open quantum system evolve unitarily? The open quantum system evolution is called Quantum operations or Quantum channel or Quantum noise channel. The open quantum system evolution is non-reversible and loses information in the process.
 
 Let us consider a system S with its Hilbert space $H_{S}$. The quantum system S is open system, and it interact with environment E. Let E's Hilbert space be $H_{E}$ and $\|e_{i}\rangle_{E}$ be its orthonormal basis. We can safely assume that the composite system S & E is closed quantum system, and it evolves unitarily $U_{SE}$ as depicted in the below figure.  
 
