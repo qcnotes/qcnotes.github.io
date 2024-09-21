@@ -47,4 +47,15 @@ $$
 \end{equation}
 $$
 
-The noise in quantum system is represented by Kraus operators $\{E_{i}\}$ satifying $\sum_{i=1}^{N} E_{i}^{+} E_{i} = I$.
+The noise in quantum system is represented by Kraus operators $\{E_{i}\}$ satifying $\sum_{i=1}^{N} E_{i}^{+} E_{i} = I$. The noisy open system evolution preserves positivity, and trace one properties. The trace of final state is
+
+$$
+Tr\{ \sum_{i=1}^{d} E_{i} \rho E_{i}^{+} \} = Tr\{ \sum_{i=1}^{d} E_{i}^{+} E_{i} \rho  \} = Tr\{\rho \} = 1
+$$
+
+Since $\rho$ is positive semi-definite, it can be factored as below to prove positivity of final state.
+
+$$
+\sum_{i=1}^{d} E_{i} \rho E_{i}^{+} = \sum_{i=1}^{d} (E_{i} \sqrt\rho) (\sqrt\rho E_{i}^{+}) \geqslant 0 
+$$
+
