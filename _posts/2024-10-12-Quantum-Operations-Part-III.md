@@ -39,7 +39,7 @@ $$
 \left( r_{x}, r_{y}, r_{z} \right) \to \left( r_{x}, (1-2p)r_{y}, (1-2p)r_{z} \right)
 $$
 
-The bit-flip error probability p increases from (0->1/2) with time and hence final state of qubit would be $(r_{x},0,0)$. All the coordiates disappear except $r_{x}$. The geometrical representation of bit-flip channel is depicted below. 
+The bit-flip error probability p increases (0->0.5) with time and hence final state of qubit would be $(r_{x},0,0)$. All the coordiates disappear except $r_{x}$. The geometrical representation of bit-flip channel is depicted below. 
 
 #### 2) **Phase flip channel:**
 The phase-flip channel is represented by Krauss operators $( \sqrt{1-p}I, \sqrt{p}Z)$, where $p$ is phase-flip error probability. The phase-flip channel acting on density matrix $\rho$ transforms it to
@@ -82,6 +82,6 @@ $$
 \left( r_{x}, r_{y}, r_{z} \right) \to \left( (1-p)r_{x}, (1-p)r_{y}, (1-p)r_{z} \right)
 $$
 
-All the coordiates disappear converging to center of Bloch sphere. The geometrical representation of depolarizing channel channel is depicted below.
+All the coordiates disappear converging to center of Bloch sphere as the p increases (0->1) as the time progresses. This center of Block sphere is maximally entangled state. The geometrical representation of depolarizing channel channel is depicted below.
 
 #### 4) **Amplitude-damping channel:**
