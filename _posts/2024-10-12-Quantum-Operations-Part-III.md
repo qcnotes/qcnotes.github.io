@@ -56,7 +56,7 @@ $$
 
 The system stays in the same state $\rho$ with probability (1-p) and flips to $Z \rho Z$ with probability p.
 
-Following similar argument as bit-flip channel, the phase-flip channel would transfor qubit Bloch's sphere co-ordinates as given below,
+Following similar argument as bit-flip channel, the phase-flip channel would transform qubit Bloch's sphere co-ordinates as given below,
 
 $$
 \left( r_{x}, r_{y}, r_{z} \right) \to \left( (1-2p)r_{x}, (1-2p)r_{y}, r_{z} \right)
@@ -64,7 +64,24 @@ $$
 
 The final state of qubit would be $(0, 0, r_{z})$. All the coordiates disappear except $r_{z}$. The geometrical representation of bit-flip channel is depicted below.
 
-#### 1) **Depolarizing channel:**
-The depolarizing channel is represented by Krauss operators $( \sqrt{1-3p/4}I, \sqrt{p/4}X, \sqrt{p/4}Y, \sqrt{p/4}Z)$, where $p$ is phase-flip error probability. The depolarizign channel acting on density matrix $\rho$ transforms it to
+#### 3) **Depolarizing channel:**
+The depolarizing channel is represented by Krauss operators $( \sqrt{1-3p/4}I, \sqrt{p/4}X, \sqrt{p/4}Y, \sqrt{p/4}Z)$, where $p$ is error probability. The depolarizign channel acting on density matrix $\rho$ transforms it to
 
-#### 1) **Amplitude-damping channel:**
+$$
+\begin{equation}
+\begin{split}
+\rho_{out} = \sum_{i=1}^{2} E_{i} \rho E_{i}^{+}  \qquad  \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \quad \\
+= (1-3p/4) \rho + (p/4) X \rho X + (p/4) Y \rho Y + (p/4) Z \rho Z  \qquad \quad \\
+\end{split}
+\end{equation}
+$$  
+
+The phase-flip channel would transform qubit Bloch's sphere co-ordinates as given below,
+
+$$
+\left( r_{x}, r_{y}, r_{z} \right) \to \left( (1-p)r_{x}, (1-p)r_{y}, (1-p)r_{z} \right)
+$$
+
+All the coordiates disappear converging to center of Bloch sphere. The geometrical representation of depolarizing channel channel is depicted below.
+
+#### 4) **Amplitude-damping channel:**
