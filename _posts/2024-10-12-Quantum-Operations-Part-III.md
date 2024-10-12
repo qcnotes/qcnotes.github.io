@@ -6,7 +6,7 @@ title: "P7. Quantum Operations - Part III"
 In this post, we shall look at few examples of quantum channels/operations such as bit-flip channel, phase-flip channel, etc.
 
 #### 1) **Bit flip channel:**
-The bit-flip channel is represented by Krauss operator $( \sqrt{1-p}I, \sqrt{p}X)$, where $p$ is bit-flip error probability. The bit-flip channel acting on input density operator $\rho$ transforms it to
+The bit-flip channel is represented by Krauss operators $( \sqrt{1-p}I, \sqrt{p}X)$, where $p$ is bit-flip error probability. The bit-flip channel acting on input density operator $\rho$ transforms it to
 
 $$
 \begin{equation}
@@ -18,9 +18,9 @@ $$
 \end{equation}
 $$  
 
-The system stays in the same state $\rho$ with probability (1-p) and flips to $X \rho X$ with probability p. Let us consider bit-flip channel effect on general two-qubit quantum system represented by $\rho = \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2}$. The two-qubit quantum system is compactly denoted as $(r_{x},r_{y},r_{z})$. 
+The system stays in the same state $\rho$ with probability (1-p) and flips to $X \rho X$ with probability p. Let us consider bit-flip channel effect on general two-qubit quantum system Bloch sphere represented is $\rho = \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2}$. The two-qubit quantum system Bloch sphere is compactly denoted as $(r_{x},r_{y},r_{z})$. 
 
-$$
+$$  
 \begin{equation}
 \begin{split}
 \rho_{out} = (1-p) \rho + p X \rho X \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \\
@@ -31,6 +31,14 @@ $$
 \end{split}
 \end{equation}
 $$  
+
+The bit-flip channel has transformed two-qubit Bloch's sphere co-ordinates from 
+
+$$
+{ r_{x}, r_{y}, r_{z} } \to { r_{x}, (1-2p)r_{y}, (1-2p)r_{z} }
+$$
+
+The bit-flip error probability p increases with time and hence final state of qubit quantum system $ r_{x},0},0$.
 
 #### 2) **Phase flip channel:**
 
