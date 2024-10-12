@@ -23,20 +23,9 @@ Let us consider effect of bit-flip channel on general qubit Bloch sphere which i
 $$
 \begin{equation}
 \begin{split}
-\rho_{out} = (1-p) \rho + p X \rho X \\
-= (1-p) \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} \right) + p X \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} \right) X \\
-\end{split}
-\end{equation}
-$$  
-
-Simplying further,
-
-$$
-\begin{equation}
-\begin{split}
-\rho_{out} = \sum_{i=1}^{2} E_{i} \rho E_{i}^{+}  \quad  \quad \quad \quad  \\
-= (1-p) \rho + p X \rho X^{+}  \\
-= (1-p) \rho + p X \rho X \quad  \\
+\rho_{out} = (1-p) \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} \right) + p X \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} \right) X \\
+= (1-p) \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} \right) + p \left( \frac{I + r_{x} X - r_{y} Y - r_{z} Z \}{2} \right) \\
+= \frac{I + r_{x} X + (1-2p)r_{y} Y + (1-2p)r_{z} Z\}{2} \\
 \end{split}
 \end{equation}
 $$  
