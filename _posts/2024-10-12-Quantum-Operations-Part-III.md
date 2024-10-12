@@ -18,14 +18,15 @@ $$
 \end{equation}
 $$  
 
-Let us consider effect of bit-flip channel on general qubit Bloch sphere which is represented as $\rho = \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2}$. The compact notation for qubit Bloch sphere is $(r_{x},r_{y},r_{z})$. 
+Let us consider effect of bit-flip channel on general qubit Bloch sphere which is represented as $\rho = \frac{I + r_{x} X + r_{y} Y + r_{z} Z}{2}$. The compact notation for qubit Bloch sphere is $(r_{x},r_{y},r_{z})$. 
 
 $$
 \begin{equation}
 \begin{split}
-\rho_{out} = (1-p) \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z}{2} \right) + p X \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z }{2} \right) X \\
-= (1-p) \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z}{2} ) + p \left( \frac{I + r_{x} X - r_{y} Y - r_{z} Z }{2} \right) \\
-= \frac{I + r_{x} X + (1-2p)r_{y} Y + (1-2p)r_{z} Z}{2} \\
+\rho_{out} = (1-p) \left(\frac{I + r_{x} X + r_{y} Y + r_{z} Z}{2} \right) + p X \left(\frac{I + r_{x} X + r_{y} Y + r_{z} Z}{2} \right) X \qquad \qquad \quad  \\
+= (1-p) \left(\frac{I + r_{x} X + r_{y} Y + r_{z} Z}{2} \right) + p \left(\frac{XX + r_{x} XXX + r_{y} XYX + r_{z} XZX}{2} \right) \quad  \\
+= (1-p) \left(\frac{I + r_{x} X + r_{y} Y + r_{z} Z}{2} \right) + p \left(\frac{I + r_{x} X - r_{y} Y - r_{z} Z}{2} \right) \qquad \qquad \qquad \\
+= \left(\frac{I + r_{x} X + (1-2p)r_{y} Y + (1-2p)r_{z} Z}{2} \right) \qquad \qquad \qquad \qquad \qquad \qquad \quad \\
 \end{split}
 \end{equation}
 $$  
