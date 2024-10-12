@@ -23,8 +23,8 @@ Let us consider effect of bit-flip channel on general qubit Bloch sphere which i
 $$
 \begin{equation}
 \begin{split}
-\rho_{out} = (1-p) \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} \right) + p X \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} \right) X \\
-= (1-p) \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} \right) + p \left( \frac{I + r_{x} X - r_{y} Y - r_{z} Z \}{2} \right) \\
+\rho_{out} = (1-p) ( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} ) + p X ( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} ) X \\
+= (1-p) ( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} ) + p ( \frac{I + r_{x} X - r_{y} Y - r_{z} Z \}{2} ) \\
 = \frac{I + r_{x} X + (1-2p)r_{y} Y + (1-2p)r_{z} Z\}{2} \\
 \end{split}
 \end{equation}
