@@ -23,9 +23,9 @@ Let us consider effect of bit-flip channel on general qubit Bloch sphere which i
 $$
 \begin{equation}
 \begin{split}
-\rho_{out} = (1-p) ( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} ) + p X ( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} ) X \\
-= (1-p) ( \frac{I + r_{x} X + r_{y} Y + r_{z} Z\}{2} ) + p ( \frac{I + r_{x} X - r_{y} Y - r_{z} Z \}{2} ) \\
-= \frac{I + r_{x} X + (1-2p)r_{y} Y + (1-2p)r_{z} Z\}{2} \\
+\rho_{out} = (1-p) \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z}{2} \right) + p X \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z }{2} \right) X \\
+= (1-p) \left( \frac{I + r_{x} X + r_{y} Y + r_{z} Z}{2} ) + p \left( \frac{I + r_{x} X - r_{y} Y - r_{z} Z }{2} \right) \\
+= \frac{I + r_{x} X + (1-2p)r_{y} Y + (1-2p)r_{z} Z}{2} \\
 \end{split}
 \end{equation}
 $$  
@@ -36,7 +36,7 @@ $$
 \left( r_{x}, r_{y}, r_{z} \right) \to \left( r_{x}, (1-2p)r_{y}, (1-2p)r_{z} \right)
 $$
 
-The bit-flip error probability p increases with time and hence final state of qubit would be $ r_{x},0},0$. All the coordiates disappear except $r_{x}$. The geometrical representation of bit-flip channel is depicted below. 
+The bit-flip error probability p increases with time and hence final state of qubit would be $(r_{x},0,0)$. All the coordiates disappear except $r_{x}$. The geometrical representation of bit-flip channel is depicted below. 
 
 #### 2) **Phase flip channel:**
 The phase-flip channel is represented by Krauss operators $( \sqrt{1-p}I, \sqrt{p}Z)$, where $p$ is bit-flip error probability. The system stays in the same state $\rho$ with probability (1-p) and flips to $Z \rho Z$ with probability p. The phase-flip channel acting on density matrix $\rho$ transforms it to
