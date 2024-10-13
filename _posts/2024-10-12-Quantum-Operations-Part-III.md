@@ -39,9 +39,9 @@ $$
 \left( r_{x}, r_{y}, r_{z} \right) \to \left( r_{x}, (1-2p)r_{y}, (1-2p)r_{z} \right)
 $$
 
-The bit-flip error probability p increases (0->0.5) with time and hence final state of qubit would be $(r_{x},0,0)$. All the coordiates disappear except X-axis coordinate $r_{x}$. The convex combination of $\|+> and \|->$ states which represents X-axis are eigen states of Pauli matrix X and hence it remained unaffected by bit-flip channel. The geometrical representation of bit-flip channel is depicted below. 
+The bit-flip error probability p increases (0->0.5) with time and hence final state of qubit would be $(r_{x},0,0)$. All the coordiates disappear except X-axis coordinate $r_{x}$. The convex combination of $\|+\rangle ~ and ~ \|-\rangle$ states which represents X-axis are eigen states of Pauli matrix X and hence it remained unaffected by bit-flip channel. The geometrical representation of bit-flip channel is depicted below. 
 
-![bit-flip channel](/assets/images/quantum_operations_examples/bit_flip_channel.jpg) 
+![bit-flip channel](/assets/images/quantum_operations_examples/bit_flip_channel.jpg = 250x250) 
 
 #### 2) **Phase flip channel:**
 The phase-flip channel is represented by Krauss operators $( \sqrt{1-p}I, \sqrt{p}Z)$, where $p$ is phase-flip error probability. The phase-flip channel acting on density matrix $\rho$ transforms it to
@@ -64,9 +64,9 @@ $$
 \left( r_{x}, r_{y}, r_{z} \right) \to \left( (1-2p)r_{x}, (1-2p)r_{y}, r_{z} \right)
 $$
 
-The final state of qubit would be $(0, 0, r_{z})$. All the coordiates disappear except Z-axis $r_{z}$. The convex combination of $\|1> and \|0>$ states which represents Z-axis are eigen states of Pauli matrix Z and hence it remained unaffected by bit-flip channel. The geometrical representation of phase-flip channel is depicted below.
+The final state of qubit would be $(0, 0, r_{z})$. All the coordiates disappear except Z-axis $r_{z}$. The convex combination of $\|0\rangle ~ and ~ \|1\rangle$ states which represents Z-axis are eigen states of Pauli matrix Z and hence it remained unaffected by bit-flip channel. The geometrical representation of phase-flip channel is depicted below.
 
-![phase-flip channel](/assets/images/quantum_operations_examples/phase_flip_channel.jpg) 
+![phase-flip channel](/assets/images/quantum_operations_examples/phase_flip_channel.jpg = 250x250) 
 
 #### 3) **Depolarizing channel:**
 The depolarizing channel is represented by Krauss operators $( \sqrt{1-3p/4}I, \sqrt{p/4}X, \sqrt{p/4}Y, \sqrt{p/4}Z)$, where $p$ is error probability. The depolarizign channel acting on density matrix $\rho$ transforms it to
@@ -88,8 +88,8 @@ $$
 
 All the coordiates disappear converging to center of Bloch sphere as the p increases (0->1) with time. This center of Block sphere is maximally entangled state. The geometrical representation of depolarizing channel channel is depicted below.
 
-![depolarizting channel](/assets/images/quantum_operations_examples/depolarizing_channel.jpg) 
+![depolarizting channel](/assets/images/quantum_operations_examples/depolarizing_channel.jpg =250x250) 
 
 #### 4) **Amplitude-damping channel:**
 
-![amplitude_damping channel](/assets/images/quantum_operations_examples/amplitude_damping_channel.jpg) 
+![amplitude_damping channel](/assets/images/quantum_operations_examples/amplitude_damping_channel.jpg =250x250) 
