@@ -91,5 +91,38 @@ All the coordiates disappear converging to center of Bloch sphere as the p incre
 ![depolarizting channel](/assets/images/quantum_operations_examples/depolarizing_channel.jpg){: width="50%" align="center"}
 
 #### 4) **Amplitude-damping channel:**
+The amplitude damping channel is represented by Kraus operators
+
+$$
+E_{1} = 
+\begin{bmatrix}
+    1       & 0 \\
+    0       & \sqrt{1-p} \\
+\end{bmatrix}
+~~ and ~~ E_{2} = 
+\begin{bmatrix}
+    0       & \sqrt{p} \\
+    0       & 0 \\
+\end{bmatrix}
+$$
+
+The depolarizign channel acting on density matrix $\rho$ transforms it to
+
+$$
+\begin{equation}
+\begin{split}
+\rho_{out} = \sum_{i=1}^{2} E_{i} \rho E_{i}^{+}  \qquad  \qquad\qquad \qquad \qquad \qquad \qquad \qquad \quad \\
+= \left(\frac{I + \sqrt{1-p} r_{x} X + \sqrt{1-p} r_{y} Y + (p + \sqrt{1-p} r_{z}) Z}{2} \right)  \\
+\end{split}
+\end{equation}
+$$ 
+
+The amplitude damping channel would transform qubit Bloch's sphere co-ordinates as given below,
+
+$$
+\left( r_{x}, r_{y}, r_{z} \right) \to \left( \sqrt{1-p}r_{x}, \sqrt{1-p}r_{y}, p+\sqrt{1-p}r_{z} \right)
+$$
+
+The geometrical representation of depolarizing channel channel is depicted below.
 
 ![amplitude_damping channel](/assets/images/quantum_operations_examples/amplitude_damping_channel.jpg){: width="50%" align="center"} 
