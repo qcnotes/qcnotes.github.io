@@ -30,10 +30,12 @@ Since $log(\gamma_Q(x))$ is linear combinations of $x_i x_j^{H}$, the expectatio
 Therefore, the above can be written as,
 
 $$
-\begin{aligned}
+\begin{equation}
+\begin{split}
 &= - \int p(x) log(p(x)) dx + \int p(x) log(\gamma_Q(x)) dx\\
 &= \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx \\
-\end{aligned}
+\end{split}
+\end{equation}
 $$
 
 Using Jenson't inequality for concave function (since log is a concave function)
