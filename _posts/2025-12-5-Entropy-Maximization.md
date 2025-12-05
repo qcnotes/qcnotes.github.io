@@ -65,8 +65,10 @@ Let us consider Kullback-Leibler divergence expression (and using Eq.3)
 $$
 \begin{equation}
 \begin{split}
--D(p||\gamma_Q) = -\int p(x)log\left(\frac{p(x)}{\gamma_Q(x)}\right)dx = H_{p}(x) - H_{\gamma_Q}(x) \\
-= \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx  \\
+-D(p||\gamma_Q) 
+&= -\int p(x)log\left(\frac{p(x)}{\gamma_Q(x)}\right)dx 
+&= H_{p}(x) - H_{\gamma_Q}(x) \\
+&= \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx  \\
 \end{split}
 \end{equation}
 $$
