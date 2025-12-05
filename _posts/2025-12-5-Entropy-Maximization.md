@@ -32,7 +32,7 @@ $$
 \begin{equation}
 \begin{split}
 = - \int p(x) log(p(x)) dx + \int p(x) log(\gamma_Q(x)) dx\\
-= \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx \qquad \qquad \qquad \qquad \qquad \\
+= \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx \\
 \end{split}
 \end{equation}
 $$
@@ -42,8 +42,8 @@ Using Jenson't inequality for concave function (since log is a concave function)
 $$
 \begin{equation}
 \begin{split}
-\leq log\left(\int p(x)\frac{\gamma_Q(x)}{p(x)} dx \right) \qquad \qquad \qquad \qquad \qquad \\
-\leq 0 \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad
+\leq log\left(\int p(x)\frac{\gamma_Q(x)}{p(x)} dx \right) \\
+\leq 0 
 \end{split}
 \end{equation}
 $$
@@ -53,7 +53,7 @@ Thus, the entropy of x satisfies required inequality
 $$
 \begin{equation}
 \begin{split}
-H_{p}(x) \leq H_{\gamma_Q}(x) \qquad \qquad \qquad \qquad \quad \\
+H_{p}(x) \leq H_{\gamma_Q}(x) \\
 \end{split}
 \end{equation}
 $$
@@ -64,8 +64,8 @@ Let us consider Kullback-Leibler divergence expression (and using Eq.3)
 $$
 \begin{equation}
 \begin{split}
--D(p||\gamma_Q) = -\int p(x)log\left(\frac{p(x)}{\gamma_Q(x)}\right)dx = H_{p}(x) - H_{\gamma_Q}(x) \qquad \qquad \qquad \qquad \\
-= \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad  \\
+-D(p||\gamma_Q) = -\int p(x)log\left(\frac{p(x)}{\gamma_Q(x)}\right)dx = H_{p}(x) - H_{\gamma_Q}(x) \\
+= \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx  \\
 \end{split}
 \end{equation}
 $$
@@ -73,10 +73,10 @@ Using the inequality log(x) <= (x-1)}
 $$
 \begin{equation}
 \begin{split}
-\leq \int p(x) \left(\frac{\gamma_Q(x)}{p(x)}-1\right)dx \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad  \\
-\leq \int \left(\gamma_Q(x) - p(x)\right) dx \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \\
+\leq \int p(x) \left(\frac{\gamma_Q(x)}{p(x)}-1\right)dx  \\
+\leq \int \left(\gamma_Q(x) - p(x)\right) dx \\
 \\
-H_{p}(x) - H_{\gamma_Q}(x) \leq 0 \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \\
+H_{p}(x) - H_{\gamma_Q}(x) \leq 0 \\
 \end{split}
 \end{equation}
 $$
@@ -86,7 +86,7 @@ Thus, the entropy of x satisfies required inequality
 $$
 \begin{equation}
 \begin{split}
-H_{p}(x) \leq H_{\gamma_Q}(x) \qquad \qquad \qquad \qquad \quad \\
+H_{p}(x) \leq H_{\gamma_Q}(x) \\
 \end{split}
 \end{equation}
 $$
