@@ -17,10 +17,10 @@ $$
 Let us consider difference between entropy of x and circularly symmetric Gaussian randon vector,
 
 $$
-\begin{aligned}
+\begin{aligned}{equation}
 H_{p}(x) - H_{\gamma_Q}(x)  
 &= - \int p(x) log(p(x)) dx + \int \gamma_Q(x) log(\gamma_Q(x)) dx\\
-\end{aligned}
+\end{aligned}{equation}
 $$
 
 Since $log(\gamma_Q(x))$ is linear combinations of $x_i x_j^{H}$, the expectation with respect to two probability functions are same, (i.e) $E_{p}\left(log(\gamma_Q(x))\right) = E_{\gamma_Q}\left(log(\gamma_Q(x))\right).$ 
