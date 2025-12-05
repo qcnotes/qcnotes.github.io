@@ -18,7 +18,8 @@ Let us consider difference between entropy of x and circularly symmetric Gaussia
 
 $$
 \begin{aligned}
-H_{p}(x) - H_{\gamma_Q}(x)  = - \int p(x) log(p(x)) dx + \int \gamma_Q(x) log(\gamma_Q(x)) dx\\
+H_{p}(x) - H_{\gamma_Q}(x)  
+&= - \int p(x) log(p(x)) dx + \int \gamma_Q(x) log(\gamma_Q(x)) dx\\
 \end{aligned}
 $$
 
@@ -28,8 +29,8 @@ Therefore, the above can be written as,
 
 $$
 \begin{aligned}
-= - \int p(x) log(p(x)) dx + \int p(x) log(\gamma_Q(x)) dx\\
-= \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx \\
+&= - \int p(x) log(p(x)) dx + \int p(x) log(\gamma_Q(x)) dx\\
+&= \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx \\
 \end{aligned}
 $$
 
@@ -37,8 +38,8 @@ Using Jenson't inequality for concave function (since log is a concave function)
 
 $$
 \begin{aligned}
-\leq log\left(\int p(x)\frac{\gamma_Q(x)}{p(x)} dx \right) \\
-\leq 0 
+&\leq log\left(\int p(x)\frac{\gamma_Q(x)}{p(x)} dx \right) \\
+&\leq 0 
 \end{aligned}
 $$
 
@@ -64,9 +65,9 @@ Using the inequality log(x) <= (x-1)}
 
 $$
 \begin{aligned}
-\leq \int p(x) \left(\frac{\gamma_Q(x)}{p(x)}-1\right)dx  \\
-\leq \int \left(\gamma_Q(x) - p(x)\right) dx \\
-H_{p}(x) - H_{\gamma_Q}(x) \leq 0 \\
+&\leq \int p(x) \left(\frac{\gamma_Q(x)}{p(x)}-1\right)dx  \\
+&\leq \int \left(\gamma_Q(x) - p(x)\right) dx \\
+H_{p}(x) - H_{\gamma_Q}(x) &\leq 0 \\
 \end{aligned}
 $$
 
