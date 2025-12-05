@@ -17,11 +17,9 @@ $$
 Let us consider difference between entropy of x and circularly symmetric Gaussian randon vector,
 
 $$
-\begin{equation}
-\begin{split}
+\begin{aligned}
 H_{p}(x) - H_{\gamma_Q}(x)  = - \int p(x) log(p(x)) dx + \int \gamma_Q(x) log(\gamma_Q(x)) dx\\
-\end{split}
-\end{equation}
+\end{aligned}
 $$
 
 Since $log(\gamma_Q(x))$ is linear combinations of $x_i x_j^{H}$, the expectation with respect to two probability functions are same, (i.e) $E_{p}\left(log(\gamma_Q(x))\right) = E_{\gamma_Q}\left(log(\gamma_Q(x))\right).$ 
@@ -29,64 +27,55 @@ Since $log(\gamma_Q(x))$ is linear combinations of $x_i x_j^{H}$, the expectatio
 Therefore, the above can be written as,
 
 $$
-\begin{equation}
-\begin{split}
+\begin{aligned}
 = - \int p(x) log(p(x)) dx + \int p(x) log(\gamma_Q(x)) dx\\
 = \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx \\
-\end{split}
-\end{equation}
+\end{aligned}
 $$
 
 Using Jenson't inequality for concave function (since log is a concave function)
 
 $$
-\begin{equation}
-\begin{split}
+\begin{aligned}
 \leq log\left(\int p(x)\frac{\gamma_Q(x)}{p(x)} dx \right) \\
 \leq 0 
-\end{split}
-\end{equation}
+\end{aligned}
 $$
 
 Thus, the entropy of x satisfies required inequality
 
 $$
-\begin{equation}
-\begin{split}
+\begin{aligned}
 H_{p}(x) \leq H_{\gamma_Q}(x) \\
-\end{split}
-\end{equation}
+\end{aligned}
 $$
 
 #### 2) **Alternate Proof:**
 Let us consider Kullback-Leibler divergence expression (and using Eq.3)
 
 $$
-\begin{equation}
-\begin{split}
+\begin{aligned}
 -D(p||\gamma_Q) = -\int p(x)log\left(\frac{p(x)}{\gamma_Q(x)}\right)dx = H_{p}(x) - H_{\gamma_Q}(x) \\
 = \int p(x)log\left(\frac{\gamma_Q(x)}{p(x)}\right)dx  \\
-\end{split}
-\end{equation}
+\end{aligned}
 $$
+
 Using the inequality log(x) <= (x-1)}
+
 $$
-\begin{equation}
-\begin{split}
+\begin{aligned}
 \leq \int p(x) \left(\frac{\gamma_Q(x)}{p(x)}-1\right)dx  \\
 \leq \int \left(\gamma_Q(x) - p(x)\right) dx \\
-\\
 H_{p}(x) - H_{\gamma_Q}(x) \leq 0 \\
-\end{split}
-\end{equation}
+\end{aligned}
 $$
 
 Thus, the entropy of x satisfies required inequality
 
 $$
-\begin{equation}
+\begin{aligned}
 \begin{split}
 H_{p}(x) \leq H_{\gamma_Q}(x) \\
 \end{split}
-\end{equation}
+\end{aligned}
 $$
