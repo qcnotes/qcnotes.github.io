@@ -73,7 +73,7 @@ $$
 \end{equation}
 $$
 
-Using the inequality log(x) <= (x-1)}
+Using the inequality log(x) <= (x-1)
 
 $$
 \begin{equation}
@@ -91,6 +91,79 @@ $$
 \begin{equation}
 \begin{split}
 H_{p}(x) \leq H_{\gamma_Q}(x) \\
+\end{split}
+\end{equation}
+$$
+
+#### 3) **Third Proof:**
+Let us consider Lagrange of Entropy of x with constraints on probability and second order moments of random vector x.
+
+$$
+\begin{equation}
+\begin{split}
+\Delta = 
+& - \int p(x) log(p(x)) dx + \lambda_{0} \left ( \int p(x) dx - 1 \right ) + \sum_{i,j} \lambda_{i,j} \left ( \int x_i x_j^{H} p(x) dx-Q_{i,j} \right ) \\
+\end{split}
+\end{equation}
+$$
+
+For maximization, differentiate Lagrange of Entropy w.r.t p(x') and equate it to zero.
+
+$$
+\begin{equation}
+\begin{split}
+d∇/(dp(x'))= -log(p(x'))-1+λ_{0}+∑_{i,j}λ_{i,j}  x_i' x_j{'*} = 0
+\end{split}
+\end{equation}
+$$
+
+Simplifying and change of variable from x' to x.
+
+$$
+\begin{equation}
+\begin{split}
+p(x)=e^{ \left ( λ_{0} -1 + ∑_{i,j}  λ_{i,j}  x_i x_j^{*}  \right ) }
+\end{split}
+\end{equation}
+$$
+
+Substituting in the first constraint equations,
+
+$$
+\begin{equation}
+\begin{split}
+\int e^{ \left ( λ_{0}-1+∑_{i,j} λ_{i,j}  x_i x_j^* \right ) } dx = 1 \\
+e^{(λ_{0}-1)} = \frac{1}{ \int e^{ \left ( ∑_{i,j} λ_{i,j}  x_i x_j^{*} \right ) } dx)} ==> This is just a normalization constant.
+\end{split}
+\end{equation}
+$$
+
+Substituting in the second constraint equations,
+
+$$
+\begin{equation}
+\begin{split}
+Q_{i,j}
+&=\int x_i x_j^* e^{ \left ( λ_{0} -1 + ∑_{i,j}  λ_{i,j}  x_i x_j^{*}  \right ) } dx \\
+\end{split}
+\end{equation}
+$$
+
+$$
+\begin{equation}
+\begin{split}
+&= e^{ \left ( λ_{0} -1 \right ) } \int x_i x_j^* e^{ \left ( ∑_{i,j}  λ_{i,j}  x_i x_j^{*}  \right ) } dx \\
+\end{split}
+\end{equation}
+$$
+
+How to prove the following equation so that $p(x) = \frac{1}{det(\pi Q)} e^{ \left ( -x^{H} Q^{-1} x \right ) } $?
+
+$$
+\begin{equation}
+\begin{split}
+\int e^{ \left ( ∑_{i,j} λ_{i,j}  x_i x_j^{*} \right ) } dx = det(\pi Q) \\
+λ_{i,j} = -Q_{i,j}^{-1} \\
 \end{split}
 \end{equation}
 $$
