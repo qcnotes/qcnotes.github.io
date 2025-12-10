@@ -75,7 +75,7 @@ $$
 \end{equation}
 $$
 
-Using the inequality log(x) <= (x-1), with equality of x=1.
+Using the inequality log(x) <= (x-1), with equality if and only if x=1.
 
 $$
 \begin{equation}
