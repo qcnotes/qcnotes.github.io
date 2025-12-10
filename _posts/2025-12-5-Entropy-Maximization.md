@@ -10,7 +10,7 @@ Let us consider a complex random vector $x \in C^{n}$ with zero mean and satisfy
 The expression $H_{\gamma_Q}(x)=log(det(\pi e Q))$ is the capacity of circularly symmetric complex Gaussian random vector with probability density function 
 
 $$ 
-\gamma_Q(x)=\frac{1}{det \left(\pi Q\right)} e^{-{x Q^{-1} x^{H}}}, \quad and \quad Q_{i,j} = \int x_i x_j^{H} \gamma_Q(x) dx
+\gamma_Q(x)=\frac{1}{det \left(\pi Q\right)} e^{-{x^{H} Q^{-1} x}}, \quad and \quad Q_{i,j} = \int x_i x_j^{H} \gamma_Q(x) dx
 $$
 
 #### 1) **Proof:**
@@ -59,6 +59,8 @@ H_{p}(x) \leq H_{\gamma_Q}(x) \\
 \end{equation}
 $$
 
+with equality if and only if $\gamma_Q(x)/p(x)$ is a constant (i.e) $\gamma_Q(x) = p(x)$.
+
 #### 2) **Alternate Proof:**
 Let us consider Kullback-Leibler divergence expression (and using Eq.3)
 
@@ -73,7 +75,7 @@ $$
 \end{equation}
 $$
 
-Using the inequality log(x) <= (x-1)
+Using the inequality log(x) <= (x-1), with equality of x=1.
 
 $$
 \begin{equation}
@@ -94,6 +96,8 @@ H_{p}(x) \leq H_{\gamma_Q}(x) \\
 \end{split}
 \end{equation}
 $$
+
+with equality if and only if $\gamma_Q(x)/p(x)$ is a constant (i.e) $\gamma_Q(x) = p(x)$.
 
 #### 3) **Third Proof:**
 Let us consider Lagrange of Entropy of x with constraints on probability and second order moments of random vector x.
@@ -133,10 +137,15 @@ $$
 \begin{equation}
 \begin{split}
 \int e^{ \left ( λ_{0}-1+∑_{i,j} λ_{i,j}  x_i x_j^* \right ) } dx = 1 \\
-e^{(λ_{0}-1)} = \frac{1}{ \int e^{ \left ( ∑_{i,j} λ_{i,j}  x_i x_j^{*} \right ) } dx)} ==> This is just a normalization constant.
+e^{(λ_{0}-1)} \int e^{ \left ( ∑_{i,j} λ_{i,j}  x_i x_j^* \right ) } dx = 1 \\
+e^{(λ_{0}-1)} \int e^{ \left ( x^{H} \Lambda x \right ) } dx = 1 \\
+e^{(λ_{0}-1)} det \left(\pi (-\Lambda)^{-1}\right) \times \underbrace{\frac{1}{det \left(\pi (-\Lambda)^{-1}\right)} \int e^{ \left ( -x^{H} (-\Lambda) x \right ) } dx }_{1} = 1 \\
+e^{(λ_{0}-1)} &= \frac{1}{det \left(\pi (-\Lambda)^{-1}\right)} \\
 \end{split}
 \end{equation}
 $$
+
+where $(-\Lambda)^{-1}$ is covariance matrix of complex random vector x.
 
 Substituting in the second constraint equations,
 
@@ -145,25 +154,17 @@ $$
 \begin{split}
 Q_{i,j}
 &=\int x_i x_j^* e^{ \left ( λ_{0} -1 + ∑_{i,j}  λ_{i,j}  x_i x_j^{*}  \right ) } dx \\
-\end{split}
-\end{equation}
-$$
-
-$$
-\begin{equation}
-\begin{split}
 &= e^{ \left ( λ_{0} -1 \right ) } \int x_i x_j^* e^{ \left ( ∑_{i,j}  λ_{i,j}  x_i x_j^{*}  \right ) } dx \\
 \end{split}
 \end{equation}
 $$
 
-How to prove the following equation so that $p(x) = \frac{1}{det(\pi Q)} e^{ \left ( -x^{H} Q^{-1} x \right ) } $?
-
 $$
 \begin{equation}
 \begin{split}
-\int e^{ \left ( ∑_{i,j} λ_{i,j}  x_i x_j^{*} \right ) } dx = det(\pi Q) \\
-λ_{i,j} = -Q_{i,j}^{-1} \\
+&= \frac{1}{ det \left ( \pi (-\Lambda)^{-1} \right ) } \int x_i x_j^{*}  e^{ \left ( -x^{H} (-\Lambda) x \right ) } dx \\
 \end{split}
 \end{equation}
 $$
+
+Therefore, $(-\Lambda)^{-1} = Q.$
