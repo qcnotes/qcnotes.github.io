@@ -145,26 +145,19 @@ e^{(λ_{0}-1)} &= \frac{1}{det \left(\pi (-\Lambda)^{-1}\right)} \\
 \end{equation}
 $$
 
-where $(-\Lambda)^{-1}$ is covariance matrix of complex random vector x.
+where $(-\Lambda)^{-1}$ is covariance matrix of complex random vector $x \in C^{n}$.
 
 Substituting in the second constraint equations,
 
 $$
 \begin{equation}
 \begin{split}
-Q_{i,j}
-&=\int x_i x_j^* e^{ \left ( λ_{0} -1 + ∑_{i,j}  λ_{i,j}  x_i x_j^{*}  \right ) } dx \\
-&= e^{ \left ( λ_{0} -1 \right ) } \int x_i x_j^* e^{ \left ( ∑_{i,j}  λ_{i,j}  x_i x_j^{*}  \right ) } dx \\
-\end{split}
-\end{equation}
-$$
-
-$$
-\begin{equation}
-\begin{split}
+Q_{i,j} 
+&= \int x_i x_j^* e^{ \left ( λ_{0} -1 + ∑_{i,j}  λ_{i,j}  x_i x_j^*  \right ) } dx \\
+&= e^{ \left ( λ_{0} -1 \right ) } \int x_i x_j^* e^{ \left ( ∑_{i,j}  λ_{i,j}  x_i x_j^*  \right ) } dx \\
 &= \frac{1}{ det \left ( \pi (-\Lambda)^{-1} \right ) } \int x_i x_j^{*}  e^{ \left ( -x^{H} (-\Lambda) x \right ) } dx \\
 \end{split}
 \end{equation}
 $$
 
-Therefore, $(-\Lambda)^{-1} = Q.$
+Therefore, $(-\Lambda)^{-1} = Q$ proving that it is a covariance matrix of complex random vector $x \in C^{n}$.
