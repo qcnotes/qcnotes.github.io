@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "P8. Channel Capacity Part-I"
+title: "P9. Channel Capacity Part-I"
 ---
 
 #### **Theorem:**
