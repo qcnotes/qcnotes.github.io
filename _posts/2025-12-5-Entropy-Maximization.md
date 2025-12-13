@@ -161,3 +161,8 @@ Q_{i,j}
 $$
 
 Therefore, $(-\Lambda)^{-1} = Q$ proving that it is a covariance matrix of complex random vector $x \in C^{n}$.
+
+Note: When the covariance contraint is removed from the maximization, the probablility distribution that maximizes becomes entropy becomes uniform distribution over a finite interval [a,b].
+
+Reference:
+- E. Telatar, “Capacity of multi-antenna Gaussian channels,” Europ. Trans. Telecommun., ETT, vol. 10, no. 6, pp. 585–596, Nov. 1999.
