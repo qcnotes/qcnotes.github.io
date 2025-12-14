@@ -107,11 +107,13 @@ $$
 $$
 
 Differentiating and simplifying,
+
 $$
 \begin{equation}
 \begin{split}
-\frac{d \bigtriangleup }{dx} = \frac{ \lambda_i^2 }{ 1 + \widetilde{Q}_{ii} \lambda_i^2 } - \mu' = 0 \\
-\widetilde{Q}_{ii}  = \frac{1}{\mu'} - \frac{1}{\lambda_i^2} \ge 0 \\
+\frac{d\bigtriangleup}{d\widetilde{Q}_{jj}} = \frac{\lambda_j^2}{1+\widetilde{Q}_{jj} \lambda_j^2}-\mu'=0 \\
+\widetilde{Q}_{jj}  = \frac{1}{\mu'} - \frac{1}{\lambda_j^2} \ge 0 \\
+\widetilde{Q}_{jj}  = \left (\frac{1}{\mu'} - \frac{1}{\lambda_j^2} \right )^{+} \\
 \end{split}
 \end{equation}
 $$
@@ -121,10 +123,17 @@ Substituting in constraint expression,
 $$
 \begin{equation}
 \begin{split}
-∑_i^M▒Q ̃_ii =∑_(i=1)^M▒(1/μ^' -1/(Λ_j^2 ))^+ =P
-1/μ^' =P/M+1/M ∑_(i=1)^M▒1/(Λ_j^2 )  and Q ̃_jj=(1/μ^' -1/(Λ_j^2 ))^+
+\sum_{j=1}^{M} \widetilde{Q}_{jj}  = \sum_{j=1}^{M} \left (\frac{1}{\mu'} - \frac{1}{\lambda_j^2} \right )^{+} = P \\
 \end{split}
 \end{equation}
 $$
 
-This is well known water filling algorithm to allocate power to the transmit antenna. The larger the eigen values of channel matrix indicates good channel Λ_j^2   (i.e)(smaller value 1/(Λ_j^2 )  is subtracted from  1/μ^' ), and hence larger the power is allocated to that particular antenna. Similarly, the smaller the eigen values of channel matrix indicates bad channel Λ_k^2 i.e (larger value 1/(Λ_j^2 )  is subtracted from  1/μ^' ), and hence smaller power is allocated to that particular antenna.
+$$
+\begin{equation}
+\begin{split}
+\frac{1}{\mu'} = \frac{P}{M} + \frac{1}{M} \sum_{j=1}^{M}  \frac{1}{\lambda_j^2}; & \text{and} & \widetilde{Q}_{jj}  = \left (\frac{1}{\mu'} - \frac{1}{\lambda_j^2} \right )^{+} \\
+\end{split}
+\end{equation}
+$$
+
+This is well known water filling algorithm to allocate power to the transmit antenna. The larger eigen values $\lambda_j$ indicates good channel condition (i.e) smaller value $1/\lambda_j^{2}$  is subtracted from  $1/μ'$, and hence larger power is allocated to it. Similarly, smaller eigen values $\lambda_j$ indicates bad channel condition i.e larger value $1/\lambda_j^{2}$ is subtracted from  $1/μ'$, and hence smaller power is allocated to it.
