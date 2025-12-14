@@ -64,7 +64,7 @@ $$
 \begin{split}
 C 
 &= \underset{Q≥0,Tr(Q)=P}{max} \left ( log\left( det( (I_N + UΛV'QVΛU')) \right) \right) \\
-&= \underset{Q≥0,Tr(Q)=P}{max} \left ( log\left( det( (I_N + ΛV'QVΛ)) \right) \right) \\
+&= \underset{Q≥0,Tr(Q)=P}{max} \left ( log\left( det( (I_M + ΛV'QVΛ)) \right) \right) \\
 \end{split}
 \end{equation}
 $$
@@ -77,24 +77,54 @@ $$
 \begin{equation}
 \begin{split}
 C 
-&= \underset{\widetilde{Q}≥0,Tr(\widetilde{Q})=P}{max} \left ( log\left( det( (I_N + Λ\widetilde{Q}Λ)) \right) \right) \\
+&= \underset{\widetilde{Q}≥0,Tr(\widetilde{Q})=P}{max} \left ( log\left( det( (I_M + Λ\widetilde{Q}Λ)) \right) \right) \\
 \end{split}
 \end{equation}
 $$
 
-The determinant inequality $det⁡(\widetilde{Q})≤∏_(i=1)^M▒Q ̃_ii$  is satisfied with equality if and only if $\widetilde{Q}$ is diagonal matrix can be used to simplify maximize the capacity expression as
+The determinant inequality $det⁡(\widetilde{Q})≤\prod_{i=1}^{M}\widetilde{Q}_{ii}$  is satisfied with equality if and only if $\widetilde{Q}$ is diagonal matrix, and it can be used to simplify maximize the capacity expression as
 
-C=⏟max┬(Q ̃≥0,Tr(Q ̃ )=P & diag)⁡{log(det(I_M+Q ̃_ii Λ_ii^2 ))}
-C=⏟max┬(Q ̃≥0,Tr(Q ̃ )=P & diag)⁡{log(∏_(i=1)^M▒(1+Q ̃_ii Λ_i^2 ) )}==⏟max┬(Q ̃≥0,Tr(Q ̃ )=P & diag)⁡{∑_(i=1)^M▒log (1+Q ̃_ii Λ_i^2 )}
+$$
+\begin{equation}
+\begin{split}
+C 
+&= \underset{\widetilde{Q}≥0,Tr(\widetilde{Q})=P, Diag}{max} \left ( log \left( \prod_{i=1}^{M} \left( 1+\widetilde{Q}_{ii} \lambda_i^2 \right) \right) \right ) \\
+&= \underset{\widetilde{Q}≥0,Tr(\widetilde{Q})=P, Diag}{max} \left ( \sum_{i=1}^{M} log\left( 1+\widetilde{Q}_{ii} \lambda_i^2 \right) \right ) \\
+\end{split}
+\end{equation}
+$$
 
-We still must maximize over all the circularly symmetric complex gaussian random vector x with diagonal covariance matrix diag(Q ̃_ii) satisfying the constraint Tr(Q ̃)= ∑▒Q ̃_ii =P. The log is concave function, and convex optimization can be used to find Q ̃.
+We still must maximize over all the circularly symmetric complex gaussian random vector $x$ with diagonal covariance matrix $diag(\widetilde{Q}_{ii})$ satisfying the constraint $Tr(\widetilde{Q})=P$. The log is concave function, and convex optimization can be used to find $\widetilde{Q}$.
+
 Let us consider Lagrange multiplier of capacity expression with constraint,
-∇ =∑_(i=1)^M▒log (1+Q ̃_ii Λ_i^2 )-μ' (∑_i^M▒Q ̃_ii -P)
+
+$$
+\begin{equation}
+\begin{split}
+\bigtriangledown = \sum_{i=1}^{M} log\left( 1 + \widetilde{Q}_{ii} \lambda_i^2 \right) - \mu'\left( \sum_{i=1}^{M} \widetilde{Q}_{ii} -P \right)
+\end{split}
+\end{equation}
+$$
+
 Differentiating and simplifying,
-d∇/(dQ ̃_jj )=(Λ_j^2)/(1+Q ̃_jj Λ_j^2 )-μ^'=0
-Q ̃_jj=1/μ^' -1/(Λ_j^2 )≥0
-Q ̃_jj=(1/μ^' -1/(Λ_j^2 ))^+ just a representation of positive quantity
+$$
+\begin{equation}
+\begin{split}
+\frac{d \bigtriangleup }{dx} = \frac{ \lambda_i^2 }{ 1 + \widetilde{Q}_{ii} \lambda_i^2 } - \mu' = 0 \\
+\widetilde{Q}_{ii}  = \frac{1}{\mu'} - \frac{1}{\lambda_i^2} \ge 0 \\
+\end{split}
+\end{equation}
+$$
+
 Substituting in constraint expression,
+
+$$
+\begin{equation}
+\begin{split}
 ∑_i^M▒Q ̃_ii =∑_(i=1)^M▒(1/μ^' -1/(Λ_j^2 ))^+ =P
 1/μ^' =P/M+1/M ∑_(i=1)^M▒1/(Λ_j^2 )  and Q ̃_jj=(1/μ^' -1/(Λ_j^2 ))^+
+\end{split}
+\end{equation}
+$$
+
 This is well known water filling algorithm to allocate power to the transmit antenna. The larger the eigen values of channel matrix indicates good channel Λ_j^2   (i.e)(smaller value 1/(Λ_j^2 )  is subtracted from  1/μ^' ), and hence larger the power is allocated to that particular antenna. Similarly, the smaller the eigen values of channel matrix indicates bad channel Λ_k^2 i.e (larger value 1/(Λ_j^2 )  is subtracted from  1/μ^' ), and hence smaller power is allocated to that particular antenna.
