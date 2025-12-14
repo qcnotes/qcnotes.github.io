@@ -137,3 +137,7 @@ $$
 $$
 
 This is well known water filling algorithm to allocate power to the transmit antenna. The larger eigen values $\lambda_j$ indicates good channel condition (i.e) smaller value $1/\lambda_j^{2}$  is subtracted from  $1/μ'$, and hence larger power is allocated to it. Similarly, smaller eigen values $\lambda_j$ indicates bad channel condition i.e larger value $1/\lambda_j^{2}$ is subtracted from  $1/μ'$, and hence smaller power is allocated to it.
+
+![amplitude_damping channel](/assets/images/channel_capacity/water_filling_algo.jpg){: width="50%" align="center"}
+
+
