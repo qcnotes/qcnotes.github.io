@@ -153,3 +153,5 @@ C
 \end{equation}
 $$
 
+Reference:
+- E. Telatar, “Capacity of multi-antenna Gaussian channels,” Europ. Trans. Telecommun., ETT, vol. 10, no. 6, pp. 585–596, Nov. 1999.
