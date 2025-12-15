@@ -2,17 +2,19 @@
 layout: "post"
 title: "P9. Channel Capacity Part-I"
 ---
-In this post, we shall look at the deterministic channel matrix use case where both the transmitter and receiver have a full knowledge about it. The fading propagation channel use case will be explained in the subsequent blog post.
+In this post, we shall look at the deterministic channel use case where both the transmitter and receiver have a full knowledge about it. The fading propagation channel use case will be explained in the subsequent blog post.
 
-Let us consider a MIMO wireless system with $M$ transmit antenna and $N$ receive antenna.  The transmitter sends complex symbol vector $x \in C_{M}$ through its $M$ transmit antenna, and after propagation through the wireless channel matrix $H \in C_{N,M}$, the receiver receives $y \in C_{N}$ complex vector through its $N$ receive antenna as,
+Let us consider a MIMO wireless system with $M$ transmit antenna and $N$ receive antenna.  The transmitter sends complex symbol vector $x \in C^{M}$ through its $M$ transmit antenna, and after propagation through the wireless channel $H \in C^{N,M}$, the receiver receives $y \in C^{N}$ complex vector through its $N$ receive antenna as,
 
 $$
 y = Hx + z
 $$
 
-where, $z \sim NC(0,I)$ is circularly symmetric complex gaussian random vector with zero mean and identity covariance. The total transmitter total transmit power is constrained to $\le P$, (i.e) $Tr(E(xx’)) = Tr(Q) = E(x’x) = P$. The channel matrix $H \sim NC(0,I)$ is also a circularly symmetric complex gaussian random matrix with zero mean and identity covariance.
+where, $z \sim NC(0,I)$ is circularly symmetric complex gaussian random vector with zero mean and identity covariance. The total transmit power is constrained to $= P$, (i.e) $Tr(E(xx’)) = Tr(Q) = E(x’x) = P$. The propagation channel matrix $H \sim NC(0,I)$ is also a circularly symmetric complex gaussian random matrix with zero mean and identity covariance.
 
 What is the capacity of a MIMO wireless system with a deterministic channel matrix H, where both the transmitter and receiver have complete knowledge of the matrix?
+
+Consider the capacity expression that maximizes the mutual information between channel input and output for all input distribution $f(x)$ with positive definite covariance matrix $Q \ge 0$ and $Tr(Q)=P$ as,
 
 $$
 \begin{equation}
@@ -69,7 +71,7 @@ C
 \end{equation}
 $$
 
-Let $\widetilde{Q}=V'QV$ and the unitary matrix V multiplication does not change the statistics of $\widetilde{Q}$ matrix, and $Tr($\widetilde{Q})=Tr(V'QV)=Tr(Q)$. 
+Let $\widetilde{Q}=V'QV$ and the unitary matrix V multiplication does not change the statistics of $\widetilde{Q}$ matrix, and $Tr(\widetilde{Q})=Tr(V'QV)=Tr(Q)$. 
 
 Therefore, 
 
@@ -82,14 +84,14 @@ C
 \end{equation}
 $$
 
-The determinant inequality $det⁡(\widetilde{Q})≤\prod_{i=1}^{M}\widetilde{Q}_{ii}$  is satisfied with equality if and only if $\widetilde{Q}$ is diagonal matrix, and it can be used to simplify maximize the capacity expression as
+The determinant inequality $det⁡(\widetilde{Q})≤\prod_{i=1}^{M}\widetilde{Q}_{ii}$  is satisfied with equality if and only if $\widetilde{Q}$ is diagonal matrix, and it can be used to maximize the capacity expression as
 
 $$
 \begin{equation}
 \begin{split}
 C 
-&= \underset{\widetilde{Q}≥0,Tr(\widetilde{Q})=P, Diag}{max} \left ( log \left( \prod_{i=1}^{M} \left( 1+\widetilde{Q}_{ii} \lambda_i^2 \right) \right) \right ) \\
-&= \underset{\widetilde{Q}≥0,Tr(\widetilde{Q})=P, Diag}{max} \left ( \sum_{i=1}^{M} log\left( 1+\widetilde{Q}_{ii} \lambda_i^2 \right) \right ) \\
+&= \underset{diag(\widetilde{Q})≥0,Tr(\widetilde{Q})=P}{max} \left ( log \left( \prod_{i=1}^{M} \left( 1+\widetilde{Q}_{ii} \lambda_i^2 \right) \right) \right ) \\
+&= \underset{diag(\widetilde{Q})≥0,Tr(\widetilde{Q})=P}{max} \left ( \sum_{i=1}^{M} log\left( 1+\widetilde{Q}_{ii} \lambda_i^2 \right) \right ) \\
 \end{split}
 \end{equation}
 $$
@@ -136,7 +138,7 @@ $$
 \end{equation}
 $$
 
-This is well known water filling algorithm to allocate power to the transmit antenna. The larger eigen values $\lambda_j$ indicates good channel condition (i.e) smaller value $1/\lambda_j^{2}$  is subtracted from  $1/μ'$, and hence larger power is allocated to it. Similarly, smaller eigen values $\lambda_j$ indicates bad channel condition i.e larger value $1/\lambda_j^{2}$ is subtracted from  $1/μ'$, and hence smaller power is allocated to it.
+This is well known water filling algorithm to allocate power to transmit antenna. The larger eigen values $\lambda_j$ indicates good channel condition (i.e) smaller $1/\lambda_j^{2}$ value is subtracted from  $1/μ'$, and hence larger power is allocated to it. Similarly, smaller eigen values $\lambda_j$ indicates bad channel condition i.e larger $1/\lambda_j^{2}$ value is subtracted from  $1/μ'$, and hence smaller power is allocated to it.
 
 ![amplitude_damping channel](/assets/images/channel_capacity/water_filling_algo.jpg){: width="50%" align="center"}
 
