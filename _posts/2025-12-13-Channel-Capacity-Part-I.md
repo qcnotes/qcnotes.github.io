@@ -103,7 +103,7 @@ Let us consider Lagrange multiplier of capacity expression with constraint,
 $$
 \begin{equation}
 \begin{split}
-\bigtriangledown = \sum_{i=1}^{M} log\left( 1 + \widetilde{Q}_{ii} \lambda_i^2 \right) - \mu'\left( \sum_{i=1}^{M} \widetilde{Q}_{ii} -P \right)
+\bigtriangledown = \sum_{i=1}^{M} log\left( 1 + \widetilde{Q}_{ii} \lambda_i^2 \right) - \mu\left( \sum_{i=1}^{M} \widetilde{Q}_{ii} -P \right)
 \end{split}
 \end{equation}
 $$
@@ -113,9 +113,9 @@ Differentiating and simplifying,
 $$
 \begin{equation}
 \begin{split}
-\frac{d\bigtriangleup}{d\widetilde{Q}_{jj}} = \frac{\lambda_j^2}{1+\widetilde{Q}_{jj} \lambda_j^2}-\mu'=0 \\
-\widetilde{Q}_{jj}  = \frac{1}{\mu'} - \frac{1}{\lambda_j^2} \ge 0 \\
-\widetilde{Q}_{jj}  = \left (\frac{1}{\mu'} - \frac{1}{\lambda_j^2} \right )^{+} \\
+\frac{d\bigtriangleup}{d\widetilde{Q}_{jj}} = \frac{\lambda_j^2}{1+\widetilde{Q}_{jj} \lambda_j^2}-\mu=0 \\
+\widetilde{Q}_{jj}  = \frac{1}{\mu} - \frac{1}{\lambda_j^2} \ge 0 \\
+\widetilde{Q}_{jj}  = \left (\frac{1}{\mu} - \frac{1}{\lambda_j^2} \right )^{+} \\
 \end{split}
 \end{equation}
 $$
@@ -125,7 +125,7 @@ Substituting in constraint expression,
 $$
 \begin{equation}
 \begin{split}
-\sum_{j=1}^{M} \widetilde{Q}_{jj}  = \sum_{j=1}^{M} \left (\frac{1}{\mu'} - \frac{1}{\lambda_j^2} \right )^{+} = P \\
+\sum_{j=1}^{M} \widetilde{Q}_{jj}  = \sum_{j=1}^{M} \left (\frac{1}{\mu} - \frac{1}{\lambda_j^2} \right )^{+} = P \\
 \end{split}
 \end{equation}
 $$
@@ -133,13 +133,23 @@ $$
 $$
 \begin{equation}
 \begin{split}
-\frac{1}{\mu'} = \frac{P}{M} + \frac{1}{M} \sum_{j=1}^{M}  \frac{1}{\lambda_j^2}; & \text{and} & \widetilde{Q}_{jj}  = \left (\frac{1}{\mu'} - \frac{1}{\lambda_j^2} \right )^{+} \\
+\frac{1}{\mu} = \frac{P}{M} + \frac{1}{M} \sum_{j=1}^{M}  \frac{1}{\lambda_j^2}; & \text{and} & \widetilde{Q}_{jj}  = \left (\frac{1}{\mu} - \frac{1}{\lambda_j^2} \right )^{+} \\
 \end{split}
 \end{equation}
 $$
 
-This is well known water filling algorithm to allocate power to transmit antenna. The larger eigen values $\lambda_j$ indicates good channel condition (i.e) smaller $1/\lambda_j^{2}$ value is subtracted from  $1/μ'$, and hence larger power is allocated to it. Similarly, smaller eigen values $\lambda_j$ indicates bad channel condition i.e larger $1/\lambda_j^{2}$ value is subtracted from  $1/μ'$, and hence smaller power is allocated to it.
+This is well known water filling algorithm to allocate power to transmit antenna. The larger eigen values $\lambda_j$ indicates good channel condition (i.e) smaller $1/\lambda_j^{2}$ value is subtracted from  $1/μ$, and hence larger power is allocated to it. Similarly, smaller eigen values $\lambda_j$ indicates bad channel condition i.e larger $1/\lambda_j^{2}$ value is subtracted from  $1/μ$, and hence smaller power is allocated to it.
 
-![amplitude_damping channel](/assets/images/channel_capacity/water_filling_algo.jpg){: width="50%" align="center"}
+![water filling algorithm](/assets/images/channel_capacity/water_filling_algo.jpg){: .align-center}
 
+The maximum capacity with power allocation according to water filling (substitute $\widetilde{Q}_{jj}$ in Eq.8),
+
+$$
+\begin{equation}
+\begin{split}
+C 
+&=  \sum_{i=1}^{M} log\left( \frac{\lambda_i^2}{\mu} \right) \\
+\end{split}
+\end{equation}
+$$
 
