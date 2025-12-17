@@ -27,7 +27,7 @@ $$
 
 Since $log(\gamma_Q(x))$ is linear combinations of $x_i x_j^{H}$, the expectation with respect to two probability functions are same, (i.e) $E_{p}\left(log(\gamma_Q(x))\right) = E_{\gamma_Q}\left(log(\gamma_Q(x))\right).$ 
 
-Therefore, the above can be written as,
+Therefore, the above expression can be written as,
 
 $$
 \begin{equation}
@@ -75,7 +75,7 @@ $$
 \end{equation}
 $$
 
-Using the inequality log(x) <= (x-1), with equality if and only if x=1.
+Using the inequality log(x) <= (x-1), satisfying with equality if and only if x=1.
 
 $$
 \begin{equation}
@@ -97,7 +97,7 @@ H_{p}(x) \leq H_{\gamma_Q}(x) \\
 \end{equation}
 $$
 
-with equality if and only if $\gamma_Q(x)/p(x)$ is a constant (i.e) $\gamma_Q(x) = p(x)$.
+with equality if and only if $\gamma_Q(x)/p(x) = 1$ (i.e) $\gamma_Q(x) = p(x)$.
 
 #### 3) **Third Proof:**
 Let us consider Lagrange of Entropy of x with constraints on probability and second order moments of random vector x.
@@ -116,7 +116,7 @@ For maximization, differentiate Lagrange of Entropy w.r.t p(x') and equate it to
 $$
 \begin{equation}
 \begin{split}
-d∇/(dp(x'))= -log(p(x'))-1+λ_{0}+∑_{i,j}λ_{i,j}  x_i' x_j{'*} = 0
+d∇/(dp(x'))= -log(p(x'))-1+λ_{0}+∑_{i,j}λ_{i,j}  x_i' x_j{'^*} = 0
 \end{split}
 \end{equation}
 $$
@@ -131,7 +131,7 @@ p(x)=e^{ \left ( λ_{0} -1 + ∑_{i,j}  λ_{i,j}  x_i x_j^{*}  \right ) }
 \end{equation}
 $$
 
-Substituting in the first constraint equations,
+Substituting in the first constraint equation,
 
 $$
 \begin{equation}
@@ -147,7 +147,7 @@ $$
 
 where $(-\Lambda)^{-1}$ is covariance matrix of complex random vector $x \in C^{n}$.
 
-Substituting in the second constraint equations,
+Substituting in the second constraint equation,
 
 $$
 \begin{equation}
@@ -162,7 +162,7 @@ $$
 
 Therefore, $(-\Lambda)^{-1} = Q$ proving that it is a covariance matrix of complex random vector $x \in C^{n}$.
 
-Note: When the covariance contraint is removed from the maximization, the probablility distribution that maximizes becomes entropy becomes uniform distribution over a finite interval [a,b].
+Note: When the covariance contraint is removed from the maximization in Eq.(9), the probablility distribution that maximizes becomes entropy becomes uniform distribution over a finite interval [a,b].
 
 Reference:
 - E. Telatar, “Capacity of multi-antenna Gaussian channels,” Europ. Trans. Telecommun., ETT, vol. 10, no. 6, pp. 585–596, Nov. 1999.
