@@ -142,6 +142,8 @@ This is well known water filling algorithm to allocate power to transmit antenna
 
 ![water filling algorithm](/assets/images/channel_capacity/water_filling_algo.jpg){: .align-center width="70%"}
 
+*Fig.1 Water filling algorithm*  
+
 The maximum capacity with power allocation according to water filling algorithm is (substitute $\widetilde{Q}_{jj}$ in Eq.8),
 
 $$
