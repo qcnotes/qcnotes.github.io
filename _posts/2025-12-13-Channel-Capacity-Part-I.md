@@ -4,13 +4,13 @@ title: "P9. Channel Capacity Part-I"
 ---
 In this post, we shall look at the deterministic and fixed propagation channel known to both the transmitter and receiver. The fading propagation channel use case will be explained in the subsequent blog post.
 
-Let us consider a MIMO wireless system with $M$ transmit antenna and $N$ receive antenna.  The transmitter sends complex symbol vector $x \in C^{M}$ through its $M$ transmit antenna, and after propagation through the wireless channel $H \in C^{N,M}$, the receiver receives $y \in C^{N}$ complex vector through its $N$ receive antenna as,
+Let us consider a MIMO wireless system with $M$ transmit antenna and $N$ receive antenna.  The transmitter sends complex symbol vector $x \in C^{M}$ through its $M$ transmit antenna, and after propagation through the wireless channel $H \in C^{N,M}$, the receiver receives complex vector $y \in C^{N}$ through its $N$ receive antenna as,
 
 $$
 y = Hx + z
 $$
 
-where, $z \sim NC(0,I)$ is circularly symmetric complex gaussian random vector with zero mean and identity covariance. The propagation channel matrix $H \sim NC(0,I)$ is also a circularly symmetric complex gaussian random matrix with zero mean and identity covariance. The covariance matrix of transmit symbol $x$ is given as $Q=E(xx’)$. The total transmit power is constrained to atmost $P$, (i.e) $Tr(Q) = E(x’x) = P$.
+where, $z \sim NC(0,I)$ is circularly symmetric complex gaussian random vector with zero mean and identity covariance. The propagation channel matrix $H \sim NC(0,I)$ is also a circularly symmetric complex gaussian random matrix with zero mean and identity covariance. Let $Q=E(xx’)$ be covariance matrix of transmit symbol $x$. The total transmit power is constrained to atmost $P$, (i.e) $Tr(Q) = E(x’x) = P$.
 
 What is the capacity of a MIMO wireless system with a deterministic and fixed channel matrix H, where both the transmitter and receiver have complete knowledge of the channel matrix?
 
@@ -38,7 +38,7 @@ C
 \end{equation}
 $$
 
-We know that circularly symmetric gaussian random vector is entropy maximizer. Therefore, $Y$ must be circularly symmetric gaussian random vector to maximize the entropy and in turn the capacity. For $y$ to be circularly symmetric complex gaussian vector, the transmitted symbol vector $x$ must be circularly symmetric gaussian random vector with covariance matrix $Q$ satisfying $Tr(E(xx’)) = Tr(Q) = P$. Then the covariance matrix of received vector y is given as
+We know that circularly symmetric gaussian random vector is entropy maximizer. Therefore, $Y$ must be circularly symmetric gaussian random vector to maximize the entropy and in turn the capacity. For $y$ to be circularly symmetric complex gaussian vector, the transmitted symbol vector $x$ must be circularly symmetric gaussian random vector with covariance matrix $Q$ satisfying $Tr(Q)=P$. Then the covariance matrix of received vector y is given as
 
 $$
 Q_y=E(yy')=I_N + HQH'.
@@ -57,7 +57,7 @@ C
 \end{equation}
 $$
 
-We have found so far the input distribution to maximize the capacity. We still must maximize capacity over all the circularly symmetric complex gaussian random vector $x$ with covariance matrix $Q$ satisfying power constraint $Tr(Q)=P$.
+We have found so far the input distribution $f(X)$ to maximize the capacity. We still must maximize capacity over all the circularly symmetric complex gaussian random vector $x$ with covariance matrix $Q$ satisfying power constraint $Tr(Q)=P$.
 
 To simplify further, let us consider singular value decomposition of channel matrix $H=U \Lambda V'$, where $U$ is eigen vectors of $HH’$, $V$ is eigen vector of $H’H$ and $\Lambda$ is a square root of eigen value of $HH’$ or $H’H$ matrix. Substituting the SVD of $H$ in the capacity expression and using $det(I+AB)=det(I+BA)$ equivalence, we get
 
@@ -96,14 +96,14 @@ C
 \end{equation}
 $$
 
-We still must maximize over all the circularly symmetric complex gaussian random vector $x$ with diagonal covariance matrix $diag(\widetilde{Q}_{ii})$ satisfying the constraint $Tr(\widetilde{Q})=P$. The log is concave function, and convex optimization can be used to find $\widetilde{Q}$.
+We still must maximize over all the circularly symmetric complex gaussian random vector $x$ with diagonal covariance matrix $diag(\widetilde{Q}_{ii})$ satisfying the constraint $Tr(\widetilde{Q})=P$. The log is concave function, and convex optimization can be used to find diagonal matrix $\widetilde{Q}$.
 
 Let us consider Lagrange multiplier of capacity expression with power constraint,
 
 $$
 \begin{equation}
 \begin{split}
-\bigtriangledown = \sum_{i=1}^{M} log\left( 1 + \widetilde{Q}_{ii} \lambda_i^2 \right) - \mu\left( \sum_{i=1}^{M} \widetilde{Q}_{ii} -P \right)
+\bigtriangledown = \sum_{i=1}^{M} log\left( 1 + \widetilde{Q}_{ii} \lambda_i^2 \right) - \frac{1}{\mu}\left( \sum_{i=1}^{M} \widetilde{Q}_{ii} -P \right)
 \end{split}
 \end{equation}
 $$
@@ -113,9 +113,9 @@ Differentiating and simplifying,
 $$
 \begin{equation}
 \begin{split}
-\frac{d\bigtriangleup}{d\widetilde{Q}_{jj}} = \frac{\lambda_j^2}{1+\widetilde{Q}_{jj} \lambda_j^2}-\mu=0 \\
-\widetilde{Q}_{jj}  = \frac{1}{\mu} - \frac{1}{\lambda_j^2} \ge 0 \\
-\widetilde{Q}_{jj}  = \left (\frac{1}{\mu} - \frac{1}{\lambda_j^2} \right )^{+} \\
+\frac{d\bigtriangleup}{d\widetilde{Q}_{jj}} = \frac{\lambda_j^2}{1+\widetilde{Q}_{jj} \lambda_j^2}-\frac{1}{\mu}=0 \\
+\widetilde{Q}_{jj}  = \mu - \frac{1}{\lambda_j^2} \ge 0 \\
+\widetilde{Q}_{jj}  = \left (\mu - \frac{1}{\lambda_j^2} \right )^{+} \\
 \end{split}
 \end{equation}
 $$
@@ -125,7 +125,7 @@ Substituting in constraint expression,
 $$
 \begin{equation}
 \begin{split}
-\sum_{j=1}^{M} \widetilde{Q}_{jj}  = \sum_{j=1}^{M} \left (\frac{1}{\mu} - \frac{1}{\lambda_j^2} \right )^{+} = P \\
+\sum_{j=1}^{M} \widetilde{Q}_{jj}  = \sum_{j=1}^{M} \left (\mu - \frac{1}{\lambda_j^2} \right )^{+} = P \\
 \end{split}
 \end{equation}
 $$
@@ -133,7 +133,7 @@ $$
 $$
 \begin{equation}
 \begin{split}
-\frac{1}{\mu} = \frac{P}{M} + \frac{1}{M} \sum_{j=1}^{M}  \frac{1}{\lambda_j^2}, && \text{and} & \widetilde{Q}_{jj}  = \left (\frac{1}{\mu} - \frac{1}{\lambda_j^2} \right )^{+} \\
+\mu = \frac{P}{M} + \frac{1}{M} \sum_{j=1}^{M}  \frac{1}{\lambda_j^2}, && \text{and} & \widetilde{Q}_{jj}  = \left (\mu - \frac{1}{\lambda_j^2} \right )^{+} \\
 \end{split}
 \end{equation}
 $$
@@ -142,13 +142,13 @@ This is well known water filling algorithm to allocate power to transmit antenna
 
 ![water filling algorithm](/assets/images/channel_capacity/water_filling_algo.jpg){: width="50%" .align-center}
 
-The maximum capacity with power allocation according to water filling (substitute $\widetilde{Q}_{jj}$ in Eq.8),
+The maximum capacity with power allocation according to water filling algorithm is (substitute $\widetilde{Q}_{jj}$ in Eq.8),
 
 $$
 \begin{equation}
 \begin{split}
 C 
-&=  \sum_{i=1}^{M} log\left( \frac{\lambda_i^2}{\mu} \right) \\
+&=  \sum_{i=1}^{M} log\left( \mu \lambda_i^2 \right) \\
 \end{split}
 \end{equation}
 $$
