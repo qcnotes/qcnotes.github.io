@@ -30,7 +30,8 @@ C
 \end{equation}
 $$
 
-Special case 1) For the large number of transmit antenna use case, i.e., $M\to \infty$. The expression $(HH')/M \to I_N$ as $M \to \infty$. Therefore, the above capacity expression becomes,
+
+1) Special case: For the large number of transmit antenna use case, i.e., $M\to \infty$. The expression $(HH')/M \to I_N$ as $M \to \infty$. Therefore, the above capacity expression becomes,
 
 $$
 \begin{equation}
@@ -47,8 +48,9 @@ $$
 \begin{equation}
 \begin{split}
 C
-&=log(1+P)^N \\
-&=N×log(1+P)
+&= log \left ( det \left ( I_N+P×I_N \right ) \right ) \\
+&= log \left (1+P \right )^N \\
+&= N×log \left (1+P \right )
 \end{split}
 \end{equation}
 $$
