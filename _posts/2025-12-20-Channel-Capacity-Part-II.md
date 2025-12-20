@@ -59,4 +59,4 @@ The channel capacity increases linearly with number of receive antenna $N$.
 
 2) Special case: For the large number of received antenna use case, i.e., $N\to \infty$. The expression $(H'H)/N \to I_N$ as $N \to \infty$. Can the capacity expression be simplified?
 
-3) Special case: How does capacity behaves When number of receive and transmit antenna are equal, i.e., $N=M$.
+3) Special case: How does capacity behaves when number of receive and transmit antenna are equal, i.e., $N=M$.
