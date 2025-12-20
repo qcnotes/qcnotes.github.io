@@ -25,18 +25,18 @@ $$
 \begin{equation}
 \begin{split}
 C
-&= \underset{Q≥0,Tr(Q)=P}{max} E_{H}\left ( log\left( det \left( I_N + \frac{P}{M}HH' \right ) \right) \right) \\
+&= E_{H}\left ( log\left( det \left( I_N + \frac{P}{M}HH' \right ) \right) \right) \\
 \end{split}
 \end{equation}
 $$
 
-Case 1) For the large number of transmit antenna use case, i.e., $M\to \infty$. The expression $(HH')/M \to I_N$ as $M \to \infty$. Therefore, the above capacity expression becomes,
+Special case 1) For the large number of transmit antenna use case, i.e., $M\to \infty$. The expression $(HH')/M \to I_N$ as $M \to \infty$. Therefore, the above capacity expression becomes,
 
 $$
 \begin{equation}
 \begin{split}
 C
-&=E_{H}⁡\left\( log(det(I_N+P×I_N )) \right\)
+&= E_{H}⁡ \left ( log(det(I_N+P×I_N)) \right ) \\
 \end{split}
 \end{equation}
 $$
