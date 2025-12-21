@@ -30,7 +30,7 @@ C
 \end{equation}
 $$
 
-\underline{Special cases}:
+Special cases:
 
 1) For a sufficiently large number of transmit antenna (i.e., $M\to \infty$): The expression $(HH')/M \to I_N$ as $M \to \infty$. Therefore, the above capacity expression becomes,
 
