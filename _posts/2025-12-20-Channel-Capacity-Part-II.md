@@ -38,6 +38,7 @@ $$
 \begin{equation}
 \begin{split}
 C
+&= \lim_{M \to \infty } E_{H}\left ( log\left( det \left( I_N + \frac{P}{M}HH' \right ) \right) \right) \\
 &= E_{H}⁡ \left ( log(det(I_N+P×I_N)) \right ) \\
 \end{split}
 \end{equation}
@@ -58,6 +59,19 @@ $$
 
 The channel capacity increases linearly with number of receive antenna $N$.
 
-2) For a sufficiently large number of received antenna (i.e., $N\to \infty$): The expression $(H'H)/N \to I_N$ as $N \to \infty$. Can the capacity expression be simplified?
+2) For a sufficiently large number of received antenna (i.e., $N\to \infty$): The expression $(H'H)/N \to I_N$ as $N \to \infty$. Can the capacity expression be simplified as follows?
+
+$$
+\begin{equation}
+\begin{split}
+C
+&= \lim_{N \to \infty }  E_{H}\left ( log\left( det \left( I_N + \frac{P \times N}{M \times N}HH' \right ) \right) \right) \\
+&= \lim_{N \to \infty }  E_{H}\left ( log\left( det \left( I_M + \frac{P \times N}{M \times N}H'H \right ) \right) \right) \\
+&= \lim_{N \to \infty }   log\left( det \left( I_M + \frac{P \times N}{M}I_M \right ) \right) \\
+&= \lim_{N \to \infty }   log \left( 1 + \frac{P \times N}{M} \right )^{M} \\
+&= \lim_{N \to \infty }   M \times log \left( 1 + \frac{P \times N}{M} \right ) \\
+\end{split}
+\end{equation}
+$$
 
 3) How does capacity behaves when number of receive and transmit antenna are equal, i.e., $N=M$.
