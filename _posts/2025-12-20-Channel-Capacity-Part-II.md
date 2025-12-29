@@ -11,7 +11,7 @@ $$
 y = Hx + z
 $$
 
-where, $z \sim NC(0,I_N)$ is circularly symmetric complex gaussian random vector with zero mean and identity covariance. The propagation channel matrix $H_{N \times M}$ comprised of i.i.d random variable with zero mean and unit variance. Let $Q=E(xx’)$ be covariance matrix of transmit symbol $x$ with total transmit power constraint $, (i.e) $Tr(Q) = E(x’x) = P$. 
+where, $z \sim NC(0,I_N)$ is circularly symmetric complex gaussian random vector with zero mean and identity covariance. The propagation channel matrix $H$ comprised of i.i.d random variable with zero mean and unit variance. Let $Q=E(xx’)$ be covariance matrix of transmit symbol $x$ with total transmit power constraint $, (i.e) $Tr(Q) = E(x’x) = P$. 
 
 We could take the capacity expression of a circularly symmetric gaussian random vector $x$ that maximized the capacity of MIMO wireless system and apply expectation w.r.t to $H$ to compute the average channel capacity as,
 
