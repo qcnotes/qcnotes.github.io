@@ -10,7 +10,7 @@ $$
 y = Hx + z
 $$
 
-where, $z \sim NC(0,I)$ is circularly symmetric complex gaussian random vector with zero mean and identity covariance. The propagation channel matrix $H \sim NC(0,I)$ is also a circularly symmetric complex gaussian random matrix with zero mean and identity covariance. Let $Q=E(xx’)$ be covariance matrix of transmit symbol $x$. The total transmit power is constrained to atmost $P$, (i.e) $Tr(Q) = E(x’x) = P$.
+where, $z \sim NC(0,I)$ is circularly symmetric complex gaussian random vector with zero mean and identity covariance. The propagation channel matrix $H$ comprised of i.i.d random variable with zero mean and unit variance. Let $Q=E(xx’)$ be covariance matrix of transmit symbol $x$. The total transmit power is constrained to atmost $P$, (i.e) $Tr(Q) = E(x’x) = P$.
 
 What is the capacity of a MIMO wireless system with a deterministic and fixed channel matrix H, where both the transmitter and receiver have complete knowledge of the channel matrix?
 
