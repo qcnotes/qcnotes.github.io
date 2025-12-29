@@ -3,7 +3,7 @@ layout: "post"
 title: "P10. Channel Capacity Part-II"
 ---
 
-In this blog post, we shall look at a fading channel capacity. The channel is assumed to be changing for every use of it, and transmitter does not have channel information apriori to allocate power according to water filling algorithm to maximize the capacity. Therefore, the system must be designed assuming no knowledge of channel information at the transmitter. When propagation channel is changing every use, then the channel capacity is also changing for every use. Consequently, we must in this case compute the expected channel capacity.
+In this blog post, we shall look at a fading channel capacity. The channel is assumed to be changing for every use of it, and transmitter does not have channel information apriori to allocate power according to water filling algorithm to maximize the capacity. Therefore, the system must be designed assuming no knowledge of channel information at the transmitter. When propagation channel is changing every use, then the channel capacity is also changing for every use. Consequently, we must compute the expected channel capacity.
 
 Let us consider a wireless MIMO system model mentioned in the previous post. 
 
@@ -38,7 +38,7 @@ C
 \end{equation}
 $$
 
-Special cases:
+\underline{Special cases:}
 
 1) For a sufficiently large number of transmit antenna (i.e., $M\to \infty$): The expression $(HH')/M \to I_N$ as $M \to \infty$. Therefore, the above capacity expression becomes,
 
