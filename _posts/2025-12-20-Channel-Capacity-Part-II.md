@@ -81,3 +81,12 @@ C
 $$
 
 3) How does capacity behaves when number of receive and transmit antenna are equal, i.e., $N=M$.
+
+$$
+\begin{equation}
+\begin{split}
+C
+&= \lim_{N \to \infty }   N \times log \left( 1 + P \right ) \\
+\end{split}
+\end{equation}
+$$
