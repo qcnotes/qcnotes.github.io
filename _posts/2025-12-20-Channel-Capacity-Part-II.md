@@ -3,9 +3,17 @@ layout: "post"
 title: "P10. Channel Capacity Part-II"
 ---
 
-In this blog post, we shall look at a fading propagation channel capacity. The channel is assumed to be changing for every use of channel. If propagation channel is changing every use, then the channel capacity is also changing for every use. We must in this case compute the expected channel capacity.
+In this blog post, we shall look at a fading channel capacity. The channel is assumed to be changing for every use of it, and transmitter does not have channel information apriori to allocate power according to water filling algorithm to maximize the capacity. Therefore, the system must be designed assuming no knowledge of channel information at the transmitter. When propagation channel is changing every use, then the channel capacity is also changing for every use. Consequently, we must in this case compute the expected channel capacity.
 
-Let us consider wireless MIMO system model mentioned in the previous post. The expected capacity of changing propagation channel is given as,
+Let us consider a wireless MIMO system model mentioned in the previous post. 
+
+$$
+y = Hx + z
+$$
+
+where, $z \sim NC(0,I_N)$ is circularly symmetric complex gaussian random vector with zero mean and identity covariance. The propagation channel matrix $H_{N \times M}$ comprised of i.i.d random variable with zero mean and unit variance. Let $Q=E(xx’)$ be covariance matrix of transmit symbol $x$ with total transmit power constraint $, (i.e) $Tr(Q) = E(x’x) = P$. 
+
+We could take the capacity expression of a circularly symmetric gaussian random vector $x$ that maximized the capacity of MIMO wireless system and apply expectation w.r.t to $H$ to compute the average channel capacity as,
 
 $$
 \begin{equation}
@@ -16,9 +24,9 @@ C
 \end{equation}
 $$
 
-where, the expectation is w.r.t to $H$, the input symbols $x$ is a circularly symmetric complex gaussian random vector with zero mean and covariance $Q=E(xx')$. The total transmit power is constrained to atmost $P$, (i.e) $Tr(Q) = E(x’x) = P$.
+where, the expectation is w.r.t to $H$.
 
-How to prove below maximation with respect to input distribution? 
+How to prove below capacity expression with respect to input distribution? 
 The channel capacity is achieved for circularly symmetric complex gaussian input symbol $x$ with zero mean and covariance $Q=E(xx')=(P/M)I_M$. The channel capacity is given by,
 
 $$
