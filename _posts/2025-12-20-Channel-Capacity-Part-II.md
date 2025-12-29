@@ -24,8 +24,6 @@ C
 \end{equation}
 $$
 
-where, the expectation is w.r.t to $H$.
-
 How to prove below capacity expression with respect to input distribution? 
 The channel capacity is achieved for circularly symmetric complex gaussian input symbol $x$ with zero mean and covariance $Q=E(xx')=(P/M)I_M$. The channel capacity is given by,
 
@@ -38,7 +36,7 @@ C
 \end{equation}
 $$
 
-\underline{Special cases:}
+#### **Special cases:**
 
 1) For a sufficiently large number of transmit antenna (i.e., $M\to \infty$): The expression $(HH')/M \to I_N$ as $M \to \infty$. Therefore, the above capacity expression becomes,
 
